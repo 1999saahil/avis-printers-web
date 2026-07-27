@@ -2,6 +2,8 @@
    AVIS PRINTERS - HIGH-CONVERTING LANDING PAGE JAVASCRIPT
    ========================================================================== */
 
+const WHATSAPP_NUMBER = "919318361225";
+
 // Real Master Project Dataset (Linux & Vercel Case-Sensitive Clean Paths)
 const projectsData = [
   { id: 1, cat: 'stationery', title: 'Sandhya - Creative Designer Branding', tag: 'Vector & Brand Suite', img: './assets/projects/sandhya_logo.png', bgWhite: true, desc: 'Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.', specs: ['Vector Logo Design', 'Metallic Gradient Foil', 'Soft-Touch Matte Finish'] },
@@ -86,7 +88,7 @@ const testimonialsData = [
   },
   {
     name: "Sunita Deshmukh",
-    role: "Managing Director, Spice Garden Restaurant Chain",
+    role: "MD, Spice Garden Restaurant Chain",
     badge: "Hospitality Print",
     badgeColor: "amber",
     rating: 5,
@@ -231,7 +233,7 @@ function openLightbox(id) {
 
       <button onclick="orderSimilar('${p.title}')" class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 shadow-lg flex items-center justify-center gap-2">
         <i data-lucide="message-circle" class="w-5 h-5"></i>
-        <span>Order Similar Execution on WhatsApp (+91 8285462728)</span>
+        <span>Order Similar Execution on WhatsApp</span>
       </button>
     </div>
   `;
@@ -335,17 +337,17 @@ function triggerQuickWhatsApp() {
   const cat = document.getElementById('quickCat')?.value || 'General';
   const qty = document.getElementById('quickQty')?.value || '500';
   const text = encodeURIComponent(`Hi Avis Printers! I need a quick estimate for ${qty} units of ${cat}. Please guide me.`);
-  window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 }
 
 function inquireCategory(catName) {
   const text = encodeURIComponent(`Hello Avis Printers! I am interested in ordering from your "${catName}" category. Please share pricing.`);
-  window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 }
 
 function orderSimilar(projectTitle) {
   const text = encodeURIComponent(`Hi Avis Printers! I saw your past project "${projectTitle}" on your website. I want to order a similar execution.`);
-  window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 }
 
 function handleLeadSubmit(e) {
@@ -359,21 +361,21 @@ function handleLeadSubmit(e) {
   const date = document.getElementById('leadDate')?.value || '';
   const desc = document.getElementById('leadDesc')?.value || '';
 
-  const message = `*NEW PRINT INQUIRY - AVIS PRINTERS WEBSITE*
+  const message = `*NEW PRINT & CONTENT INQUIRY - AVIS PRINTERS WEBSITE*
 ---------------------------------------
 👤 *Name & Company:* ${name}
 📞 *Phone No:* ${phone}
 ✉️ *Email:* ${email}
 📦 *Product Category:* ${category}
 📊 *Quantity Needed:* ${qty}
-🎨 *Designing:* ${design}
+🎨 *Designing / Copywriting:* ${design}
 📅 *Required Date:* ${date}
 ---------------------------------------
 📝 *Description:*
 ${desc || 'Standard specifications requested.'}`;
 
   const encoded = encodeURIComponent(message);
-  window.open(`https://wa.me/918285462728?text=${encoded}`, '_blank');
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, '_blank');
 }
 
 // Initial Setup

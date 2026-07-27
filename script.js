@@ -53,7 +53,7 @@ const testimonialsData = [
     badge: "30+ Year Retainer",
     badgeColor: "amber",
     rating: 5,
-    quote: "We have been printing our commercial NCR duplicate bill books, letterheads, and tax invoice registers from Avis Printers for over 18 years. Their paper GSM quality and serial numbering precision never fail."
+    quote: "We have been printing our commercial NCR bill books, letterheads, and tax invoice registers from Avis Printers for over 18 years. Their paper GSM quality and serial numbering precision never fail."
   },
   {
     name: "Dr. Meenakshi Sundaram",

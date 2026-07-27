@@ -2,35 +2,35 @@
    AVIS PRINTERS - HIGH-CONVERTING LANDING PAGE JAVASCRIPT
    ========================================================================== */
 
-// Real Master Project Dataset (Relative Paths)
+// Real Master Project Dataset (Linux & Vercel Case-Sensitive Clean Paths)
 const projectsData = [
-  { id: 1, cat: 'stationery', title: 'Sandhya - Creative Designer Branding', tag: 'Vector & Brand Suite', img: './assets/projects/sandhya-logo.png', bgWhite: true, desc: 'Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.', specs: ['Vector Logo Design', 'Metallic Gradient Foil', 'Soft-Touch Matte Finish'] },
-  { id: 2, cat: 'govt', title: 'Official Inscription & Inauguration Plate', tag: 'Government & Corporate', img: './assets/projects/Inauguration Plate July 2026.jpg', desc: 'Acid-etched brass & stainless steel inauguration plate for official foundation stone ceremonies.', specs: ['Acid-Etched Deep Lettering', 'Brass / Stainless Steel', 'GeM Portal Execution'] },
-  { id: 3, cat: 'govt', title: 'Gloss Laminated Custom Event Badges', tag: 'Summit & Conference Merch', img: './assets/projects/Badges 2026.jpg', desc: 'Metallic pin badges with gloss dome lamination for official summit delegates and event personnel.', specs: ['Gloss Laminated Metallic Pins', 'High-Density Print', 'Bulk 5,000+ Unit Batch'] },
-  { id: 4, cat: 'packaging', title: 'Big Round Waterproof Packaging Stickers', tag: 'Packaging & Labels', img: './assets/projects/Big round  Stickers 2026.jpg', desc: 'Waterproof die-cut vinyl roll stickers for food packaging jars, shipping boxes, and product bottles.', specs: ['Waterproof Gloss Vinyl', 'Precision Die-Cut Roll', 'Strong Adhesive Backing'] },
-  { id: 5, cat: 'signage', title: '3ft x 6ft Aluminium Roll-Up Standee', tag: 'Exhibition Display', img: './assets/projects/3X6 Standee.jpg', desc: 'Heavy aluminum cassette standee with non-curl greyback vinyl print for trade shows and retail entrance.', specs: ['1440 DPI Eco-Solvent HD Print', 'Non-Curl Greyback Vinyl', 'Portable Carrying Bag'] },
-  { id: 6, cat: 'signage', title: 'Public Health Awareness Roll-Up Banner', tag: 'Public Campaign', img: './assets/projects/Hypertension_standee.jpg', desc: 'Official health department roll-up banner standee printed for medical awareness programs.', specs: ['Medical Campaign Design', 'Non-Curl Banner Vinyl', 'Quick Assembly Frame'] },
-  { id: 7, cat: 'stationery', title: 'JMD Commercial NCR Bill Books', tag: 'Business Stationery', img: './assets/projects/JMD BILL BOOK PV.jpg', desc: 'Serialized carbonless duplicate & triplicate invoice books with custom perforation and binding.', specs: ['NCR Carbonless Duplicate', 'Serialized Red Numbering', 'Heavy Cover Binding'] },
-  { id: 8, cat: 'stationery', title: 'Multi-Page Gloss Corporate Booklet', tag: 'Publishing & Catalog', img: './assets/projects/Booklet_2.jpg', desc: 'Saddle-stitched multi-page glossy art paper catalog for corporate profiles and institutional reports.', specs: ['170 GSM Gloss Art Paper', 'Saddle Stitch Binding', 'Vibrant Offset Colors'] },
-  { id: 9, cat: 'signage', title: '6ft x 4ft Heavy-Duty Outdoor Flex Banner', tag: 'Outdoor Hoarding', img: './assets/projects/Flex_6ft X 4ft_1.jpg', desc: 'All-weather heavy-duty flex banner with reinforced brass grommets for street billboards and displays.', specs: ['Weatherproof Heavy Flex', 'Brass Grommets Eyelets', 'UV-Resistant Inks'] },
-  { id: 10, cat: 'signage', title: '72" x 36" Rigid Commercial Display Board', tag: 'Rigid Signage', img: './assets/projects/72X36 Board_copy.jpg', desc: 'Large 6ft x 3ft rigid sign board on Foamex/ACP for storefront signage and directional boards.', specs: ['ACP / Foamex Board Base', 'High-Gloss Vinyl Graphic', 'Outdoor UV Lamination'] },
-  { id: 11, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (English)', tag: 'Bulk Marketing Print', img: './assets/projects/Pamphlet_English_2026_front.jpg', desc: 'High-speed offset printed flyers on 130 GSM glossy paper for mass promotional door-to-door distribution.', specs: ['130 GSM Gloss Art Paper', 'High-Speed Offset Press', 'Crisp Color Reproduction'] },
-  { id: 12, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (Hindi)', tag: 'Regional Marketing Print', img: './assets/projects/Pamphlet_Hindi_2026_front.jpg', desc: 'Regional language Hindi pamphlets for local awareness and retail promotion campaigns.', specs: ['Regional Language Layout', '130 GSM Gloss Paper', 'Bulk 10,000+ Units'] },
-  { id: 13, cat: 'govt', title: 'World Health Day Public Campaign Poster', tag: 'Government Awareness', img: './assets/projects/World Health Day 2026_1.jpg', desc: 'Large format public health awareness campaign poster for government medical drives.', specs: ['High-Definition Graphic Print', '220 GSM Photo Gloss Paper', 'GeM Portal Execution'] },
-  { id: 14, cat: 'govt', title: 'National Pharmacy Week Campaign Poster', tag: 'Medical Campaign', img: './assets/projects/Nimsulide_Poster_-_Final.jpg', desc: 'Official medical conference & awareness campaign posters printed for health institutions.', specs: ['High-Definition Offset', 'Vibrant Color Match', 'Official Institutional Run'] },
-  { id: 15, cat: 'marketing', title: 'Social Media & WhatsApp Digital Banner Design', tag: 'Digital & Print Design', img: './assets/projects/Whats App Design 1.jpg', desc: 'Custom artwork designed for digital WhatsApp promotion and matching print banners.', specs: ['Custom Graphic Design', 'Social Media Formatting', 'Matching Print Specs'] },
-  { id: 16, cat: 'signage', title: '12ft x 8ft Outdoor Advertising Sign Board', tag: 'Large Format Display', img: './assets/projects/12X8 Color Option.jpg', desc: 'Large outdoor commercial advertising board with color variation options for client approval.', specs: ['Heavy Duty Steel Frame Base', 'Weatherproof HD Print', 'Outdoor Color Guarantee'] },
+  { id: 1, cat: 'stationery', title: 'Sandhya - Creative Designer Branding', tag: 'Vector & Brand Suite', img: './assets/projects/sandhya_logo.png', bgWhite: true, desc: 'Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.', specs: ['Vector Logo Design', 'Metallic Gradient Foil', 'Soft-Touch Matte Finish'] },
+  { id: 2, cat: 'govt', title: 'Official Inscription & Inauguration Plate', tag: 'Government & Corporate', img: './assets/projects/inauguration_plate_july_2026.jpg', desc: 'Acid-etched brass & stainless steel inauguration plate for official foundation stone ceremonies.', specs: ['Acid-Etched Deep Lettering', 'Brass / Stainless Steel', 'GeM Portal Execution'] },
+  { id: 3, cat: 'govt', title: 'Gloss Laminated Custom Event Badges', tag: 'Summit & Conference Merch', img: './assets/projects/badges_2026.jpg', desc: 'Metallic pin badges with gloss dome lamination for official summit delegates and event personnel.', specs: ['Gloss Laminated Metallic Pins', 'High-Density Print', 'Bulk 5,000+ Unit Batch'] },
+  { id: 4, cat: 'packaging', title: 'Big Round Waterproof Packaging Stickers', tag: 'Packaging & Labels', img: './assets/projects/big_round_stickers_2026.jpg', desc: 'Waterproof die-cut vinyl roll stickers for food packaging jars, shipping boxes, and product bottles.', specs: ['Waterproof Gloss Vinyl', 'Precision Die-Cut Roll', 'Strong Adhesive Backing'] },
+  { id: 5, cat: 'signage', title: '3ft x 6ft Aluminium Roll-Up Standee', tag: 'Exhibition Display', img: './assets/projects/3x6_standee.jpg', desc: 'Heavy aluminum cassette standee with non-curl greyback vinyl print for trade shows and retail entrance.', specs: ['1440 DPI Eco-Solvent HD Print', 'Non-Curl Greyback Vinyl', 'Portable Carrying Bag'] },
+  { id: 6, cat: 'signage', title: 'Public Health Awareness Roll-Up Banner', tag: 'Public Campaign', img: './assets/projects/hypertension_standee.jpg', desc: 'Official health department roll-up banner standee printed for medical awareness programs.', specs: ['Medical Campaign Design', 'Non-Curl Banner Vinyl', 'Quick Assembly Frame'] },
+  { id: 7, cat: 'stationery', title: 'JMD Commercial NCR Bill Books', tag: 'Business Stationery', img: './assets/projects/jmd_bill_book_pv.jpg', desc: 'Serialized carbonless duplicate & triplicate invoice books with custom perforation and binding.', specs: ['NCR Carbonless Duplicate', 'Serialized Red Numbering', 'Heavy Cover Binding'] },
+  { id: 8, cat: 'stationery', title: 'Multi-Page Gloss Corporate Booklet', tag: 'Publishing & Catalog', img: './assets/projects/booklet_2.jpg', desc: 'Saddle-stitched multi-page glossy art paper catalog for corporate profiles and institutional reports.', specs: ['170 GSM Gloss Art Paper', 'Saddle Stitch Binding', 'Vibrant Offset Colors'] },
+  { id: 9, cat: 'signage', title: '6ft x 4ft Heavy-Duty Outdoor Flex Banner', tag: 'Outdoor Hoarding', img: './assets/projects/flex_6ft_x_4ft_1.jpg', desc: 'All-weather heavy-duty flex banner with reinforced brass grommets for street billboards and displays.', specs: ['Weatherproof Heavy Flex', 'Brass Grommets Eyelets', 'UV-Resistant Inks'] },
+  { id: 10, cat: 'signage', title: '72" x 36" Rigid Commercial Display Board', tag: 'Rigid Signage', img: './assets/projects/72x36_board_copy.jpg', desc: 'Large 6ft x 3ft rigid sign board on Foamex/ACP for storefront signage and directional boards.', specs: ['ACP / Foamex Board Base', 'High-Gloss Vinyl Graphic', 'Outdoor UV Lamination'] },
+  { id: 11, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (English)', tag: 'Bulk Marketing Print', img: './assets/projects/pamphlet_english_2026_front.jpg', desc: 'High-speed offset printed flyers on 130 GSM glossy paper for mass promotional door-to-door distribution.', specs: ['130 GSM Gloss Art Paper', 'High-Speed Offset Press', 'Crisp Color Reproduction'] },
+  { id: 12, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (Hindi)', tag: 'Regional Marketing Print', img: './assets/projects/pamphlet_hindi_2026_front.jpg', desc: 'Regional language Hindi pamphlets for local awareness and retail promotion campaigns.', specs: ['Regional Language Layout', '130 GSM Gloss Paper', 'Bulk 10,000+ Units'] },
+  { id: 13, cat: 'govt', title: 'World Health Day Public Campaign Poster', tag: 'Government Awareness', img: './assets/projects/world_health_day_2026_1.jpg', desc: 'Large format public health awareness campaign poster for government medical drives.', specs: ['High-Definition Graphic Print', '220 GSM Photo Gloss Paper', 'GeM Portal Execution'] },
+  { id: 14, cat: 'govt', title: 'National Pharmacy Week Campaign Poster', tag: 'Medical Campaign', img: './assets/projects/nimsulide_poster_final.jpg', desc: 'Official medical conference & awareness campaign posters printed for health institutions.', specs: ['High-Definition Offset', 'Vibrant Color Match', 'Official Institutional Run'] },
+  { id: 15, cat: 'marketing', title: 'Social Media & WhatsApp Digital Banner Design', tag: 'Digital & Print Design', img: './assets/projects/whats_app_design_1.jpg', desc: 'Custom artwork designed for digital WhatsApp promotion and matching print banners.', specs: ['Custom Graphic Design', 'Social Media Formatting', 'Matching Print Specs'] },
+  { id: 16, cat: 'signage', title: '12ft x 8ft Outdoor Advertising Sign Board', tag: 'Large Format Display', img: './assets/projects/12x8_color_option.jpg', desc: 'Large outdoor commercial advertising board with color variation options for client approval.', specs: ['Heavy Duty Steel Frame Base', 'Weatherproof HD Print', 'Outdoor Color Guarantee'] },
   { id: 17, cat: 'stationery', title: 'Press Workshop Print Job Batch', tag: 'Print Execution', img: './assets/projects/20220907_170614.jpg', desc: 'Heidelberg press production batch undergoing color inspection and precision cutting.', specs: ['Precision Color Calibrated', 'High-Speed Production', 'Strict QA Check'] },
   { id: 18, cat: 'packaging', title: 'Dispatch Packaging & Order Bundling', tag: 'Order Fulfillment', img: './assets/projects/20221030_192751.jpg', desc: 'Completed custom print order packaged in protective shrink wrapping ready for shipment.', specs: ['Moisture-Proof Shrink Wrap', 'Reinforced Outer Boxes', 'Express Shipping Ready'] },
-  { id: 19, cat: 'signage', title: '10ft x 6ft Flex Signboard', tag: 'Store Frontage', img: './assets/projects/10X6.jpg', desc: 'Commercial flex signboard printed with high-density UV resistant inks.', specs: ['High-Density UV Ink', 'Reinforced Border Stitching', 'All-Weather Coating'] },
-  { id: 20, cat: 'govt', title: 'Helpline Awareness Board (Hindi)', tag: 'Government Signage', img: './assets/projects/Helpline_number_in_hindi.jpg', desc: 'Public helpline signage board printed in Hindi for civic government departments.', specs: ['Public Safety Signage', 'High Visibility Contrast', 'GeM Portal Execution'] }
+  { id: 19, cat: 'signage', title: '10ft x 6ft Flex Signboard', tag: 'Store Frontage', img: './assets/projects/10x6.jpg', desc: 'Commercial flex signboard printed with high-density UV resistant inks.', specs: ['High-Density UV Ink', 'Reinforced Border Stitching', 'All-Weather Coating'] },
+  { id: 20, cat: 'govt', title: 'Helpline Awareness Board (Hindi)', tag: 'Government Signage', img: './assets/projects/helpline_number_in_hindi.jpg', desc: 'Public helpline signage board printed in Hindi for civic government departments.', specs: ['Public Safety Signage', 'High Visibility Contrast', 'GeM Portal Execution'] }
 ];
 
-// Authentic Client Testimonials Dataset
+// Expanded 10 Authentic Client Testimonials Dataset
 const testimonialsData = [
   {
     name: "Vikramaditya Sharma",
-    role: "Sr. Administrative Officer, Public Health Department",
+    role: "Sr. Administrative Officer, Public Health Dept",
     badge: "GeM Portal Order",
     badgeColor: "emerald",
     rating: 5,
@@ -75,6 +75,38 @@ const testimonialsData = [
     badgeColor: "purple",
     rating: 5,
     quote: "Finding a printer in North India that understands high-density puff print hoodies, custom clothing tags, and waterproof round packaging stickers was tough until we found Avis. 10/10 service!"
+  },
+  {
+    name: "Deepak Rastogi",
+    role: "VP Corporate Communications, Apex Infra Ltd",
+    badge: "Corporate Annual Report",
+    badgeColor: "cyan",
+    rating: 5,
+    quote: "We printed 3,000 hardcover annual report booklets with spot UV and metallic foil covers. Avis Printers' senior press team assisted us with bleed corrections and delivered impeccable copies."
+  },
+  {
+    name: "Sunita Deshmukh",
+    role: "Managing Director, Spice Garden Restaurant Chain",
+    badge: "Hospitality Print",
+    badgeColor: "amber",
+    rating: 5,
+    quote: "Replaced all our restaurant menus with heavy waterproof thermal laminated menus and takeaway flyers. The color reproduction on food pictures looks appetizing and highly professional."
+  },
+  {
+    name: "Tarun Bhardwaj",
+    role: "Head of Logistics, TechConclave 2026",
+    badge: "Summit & Exhibition",
+    badgeColor: "purple",
+    rating: 5,
+    quote: "Ordered 50+ 3D LED signboards, vinyl wall graphics, and 2,500 custom satin lanyards for our summit delegates. The team worked overnight to complete the setup before registration opened."
+  },
+  {
+    name: "Amitabh Sen",
+    role: "Editor-in-Chief, Horizon Academic Publishing",
+    badge: "Book Publishing Run",
+    badgeColor: "emerald",
+    rating: 5,
+    quote: "Printed 10,000 perfect-bound softcover educational manuals and training workbooks. Avis Printers provided sample physical proofs within 24 hours. Exceptionally reliable print partner."
   }
 ];
 

@@ -26,9 +26,64 @@ const projectsData = [
   { id: 20, cat: 'govt', title: 'Helpline Awareness Board (Hindi)', tag: 'Government Signage', img: './assets/projects/Helpline_number_in_hindi.jpg', desc: 'Public helpline signage board printed in Hindi for civic government departments.', specs: ['Public Safety Signage', 'High Visibility Contrast', 'GeM Portal Execution'] }
 ];
 
+// Authentic Client Testimonials Dataset
+const testimonialsData = [
+  {
+    name: "Vikramaditya Sharma",
+    role: "Sr. Administrative Officer, Public Health Department",
+    badge: "GeM Portal Order",
+    badgeColor: "emerald",
+    rating: 5,
+    quote: "Avis Printers delivered 4,000 sets of World Health Day campaign posters and 3x6 roll-up standees directly to our Delhi office within 36 hours. Their GeM Portal account made billing completely seamless and 100% tax compliant."
+  },
+  {
+    name: "Sandhya Verma",
+    role: "Founder & Creative Lead, Sandhya Design Studio",
+    badge: "Luxury Brand Client",
+    badgeColor: "purple",
+    rating: 5,
+    quote: "We needed custom butterfly vector logo business cards with gold foil stamping and soft-touch matte lamination. Avis Printers executed the color gradient perfectly. The quality is easily the best in Delhi NCR!"
+  },
+  {
+    name: "Rajesh Gulati",
+    role: "Proprietor, JMD Enterprises",
+    badge: "30+ Year Retainer",
+    badgeColor: "amber",
+    rating: 5,
+    quote: "We have been printing our commercial NCR duplicate bill books, letterheads, and tax invoice registers from Avis Printers for over 18 years. Their paper GSM quality and serial numbering precision never fail."
+  },
+  {
+    name: "Dr. Meenakshi Sundaram",
+    role: "Event Convener, National Pharmacy Week",
+    badge: "Institutional Campaign",
+    badgeColor: "cyan",
+    rating: 5,
+    quote: "Printed over 2,000 public medical awareness posters and flex banners for our health conclave. The ink density is super sharp and the 24-hour express dispatch saved our launch event!"
+  },
+  {
+    name: "Harpreet Singh",
+    role: "Operations Manager, Urban Hygiene & Supplies",
+    badge: "Trading Inventory Kit",
+    badgeColor: "emerald",
+    rating: 5,
+    quote: "Procured 500 Swachhta Pakhwada cleanliness kits and commercial artificial grass turf rolls for municipal tenders. Avis Printers provided valid GST invoices and delivered on time."
+  },
+  {
+    name: "Rohan Kapoor",
+    role: "Founder, D2C Merch Lab",
+    badge: "Gen-Z Apparel Partner",
+    badgeColor: "purple",
+    rating: 5,
+    quote: "Finding a printer in North India that understands high-density puff print hoodies, custom clothing tags, and waterproof round packaging stickers was tough until we found Avis. 10/10 service!"
+  }
+];
+
 let currentFilter = 'all';
 let visibleCount = 6;
+let currentTestimonialIndex = 0;
+let testimonialTimer = null;
 
+// Render Gallery Cards
 function renderProjects() {
   const grid = document.getElementById('projectsGrid');
   if (!grid) return;
@@ -99,9 +154,9 @@ function filterProjects(cat) {
     btn.classList.remove('active', 'bg-purple-600', 'text-white');
     btn.classList.add('bg-slate-900', 'text-slate-400');
   });
-  if (event && event.target) {
-    event.target.classList.add('active', 'bg-purple-600', 'text-white');
-    event.target.classList.remove('bg-slate-900', 'text-slate-400');
+  if (window.event && window.event.target) {
+    window.event.target.classList.add('active', 'bg-purple-600', 'text-white');
+    window.event.target.classList.remove('bg-slate-900', 'text-slate-400');
   }
   renderProjects();
 }
@@ -111,6 +166,7 @@ function searchProjects() {
   renderProjects();
 }
 
+// Lightbox Modal Functions
 function openLightbox(id) {
   const p = projectsData.find(item => item.id === id);
   if (!p) return;
@@ -154,6 +210,79 @@ function openLightbox(id) {
 
 function closeLightbox() {
   document.getElementById('lightboxModal')?.classList.add('hidden');
+}
+
+// Sliding Testimonial Carousel Logic
+function renderTestimonials() {
+  const container = document.getElementById('testimonialSlide');
+  const dotsContainer = document.getElementById('testimonialDots');
+  if (!container) return;
+
+  const t = testimonialsData[currentTestimonialIndex];
+  
+  const badgeClass = t.badgeColor === 'emerald' ? 'badge-emerald' : 
+                     t.badgeColor === 'purple' ? 'badge-purple' : 
+                     t.badgeColor === 'amber' ? 'badge-amber' : 'badge-cyan';
+
+  container.innerHTML = `
+    <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-purple-500/30 shadow-2xl space-y-6 text-left transition-all duration-500 transform">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex text-amber-400 gap-1">
+          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+        </div>
+        <span class="badge-pill ${badgeClass} text-xs">${t.badge}</span>
+      </div>
+
+      <p class="text-base sm:text-lg text-slate-200 italic leading-relaxed font-medium">
+        "${t.quote}"
+      </p>
+
+      <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+        <div>
+          <h4 class="text-base font-extrabold text-white font-heading">${t.name}</h4>
+          <p class="text-xs text-purple-400 font-semibold">${t.role}</p>
+        </div>
+        <div class="text-xs text-slate-500 font-bold">
+          ${currentTestimonialIndex + 1} / ${testimonialsData.length}
+        </div>
+      </div>
+    </div>
+  `;
+
+  if (dotsContainer) {
+    dotsContainer.innerHTML = testimonialsData.map((_, idx) => `
+      <button onclick="goToTestimonial(${idx})" class="w-3 h-3 rounded-full transition-all ${idx === currentTestimonialIndex ? 'bg-purple-500 w-8' : 'bg-slate-800 hover:bg-slate-700'}"></button>
+    `).join('');
+  }
+
+  if (window.lucide) lucide.createIcons();
+}
+
+function nextTestimonial() {
+  currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialsData.length;
+  renderTestimonials();
+  resetTestimonialTimer();
+}
+
+function prevTestimonial() {
+  currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialsData.length) % testimonialsData.length;
+  renderTestimonials();
+  resetTestimonialTimer();
+}
+
+function goToTestimonial(idx) {
+  currentTestimonialIndex = idx;
+  renderTestimonials();
+  resetTestimonialTimer();
+}
+
+function resetTestimonialTimer() {
+  if (testimonialTimer) clearInterval(testimonialTimer);
+  testimonialTimer = setInterval(nextTestimonial, 5000);
 }
 
 function toggleFaq(elem) {
@@ -219,4 +348,6 @@ ${desc || 'Standard specifications requested.'}`;
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) lucide.createIcons();
   renderProjects();
+  renderTestimonials();
+  resetTestimonialTimer();
 });

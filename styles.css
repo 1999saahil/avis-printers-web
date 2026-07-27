@@ -1,15 +1,13 @@
 /* ==========================================================================
-   AVIS PRINTERS - HIGH-CONVERTING GEN-Z DESIGN SYSTEM (CSS)
+   AVIS PRINTERS - HIGH-CONVERTING & MOBILE-RESPONSIVE DESIGN SYSTEM
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Color Palette - Dark Glass Aesthetic */
   --bg-dark: #070913;
-  --bg-card: rgba(22, 28, 52, 0.88);
-  --bg-card-hover: rgba(30, 38, 70, 0.95);
-  --bg-glass-input: rgba(255, 255, 255, 0.05);
+  --bg-card: rgba(22, 28, 52, 0.92);
+  --bg-card-hover: rgba(30, 38, 70, 0.98);
   
   --border-glass: rgba(255, 255, 255, 0.12);
   --border-glass-glow: rgba(139, 92, 246, 0.5);
@@ -17,25 +15,21 @@
   --primary-violet: #8b5cf6;
   --primary-violet-glow: rgba(139, 92, 246, 0.4);
   --accent-cyan: #06b6d4;
-  --accent-pink: #ec4899;
   --accent-emerald: #10b981;
   --accent-amber: #f59e0b;
   
   --text-main: #ffffff;
   --text-muted: #cbd5e1;
-  --text-subtle: #94a3b8;
   
   --font-heading: 'Outfit', -apple-system, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
   
   --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
   
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Reset & Base Styles */
@@ -48,13 +42,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: 1.5;
   overflow-x: hidden;
   position: relative;
   background-image: 
@@ -66,7 +61,7 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-dark);
@@ -74,9 +69,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background: rgba(139, 92, 246, 0.5);
   border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-violet);
 }
 
 /* Typography Utilities */
@@ -93,38 +85,31 @@ h1, h2, h3, h4, .font-heading {
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-emerald {
-  background: linear-gradient(135deg, #34d399 0%, #38bdf8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Reusable High-Visibility Glass Containers */
+/* Reusable Glass Containers */
 .glass-panel {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
   transition: all var(--transition-normal);
 }
 
 .glass-panel:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-glass-glow);
-  box-shadow: 0 25px 50px rgba(139, 92, 246, 0.25);
 }
 
-/* Enhanced Category Cards High-Visibility Styling */
+/* Category Cards Styling */
 .category-card {
-  background: rgba(22, 28, 52, 0.92);
-  border: 1px solid rgba(139, 92, 246, 0.25);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  background: rgba(22, 28, 52, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 .category-card:hover {
   border-color: rgba(139, 92, 246, 0.6);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 /* Buttons */
@@ -132,50 +117,51 @@ h1, h2, h3, h4, .font-heading {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 28px;
+  gap: 8px;
+  padding: 12px 20px;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   border-radius: var(--radius-md);
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--transition-bounce);
+  transition: all var(--transition-normal);
   border: none;
   outline: none;
+  white-space: nowrap;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary-violet), var(--accent-cyan));
   color: #ffffff;
-  box-shadow: 0 8px 25px var(--primary-violet-glow);
+  box-shadow: 0 6px 20px var(--primary-violet-glow);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
 }
 
 .btn-emerald {
   background: linear-gradient(135deg, #10b981, #059669);
   color: #ffffff;
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
 }
 
 .btn-emerald:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.55);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.55);
 }
 
 .btn-email {
   background: linear-gradient(135deg, #6366f1, #4f46e5);
   color: #ffffff;
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
 }
 
 .btn-email:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.55);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.55);
 }
 
 .btn-secondary {
@@ -187,17 +173,16 @@ h1, h2, h3, h4, .font-heading {
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.15);
   border-color: var(--primary-violet);
-  transform: translateY(-2px);
 }
 
 /* Pill Badges */
 .badge-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
+  gap: 5px;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -227,11 +212,40 @@ h1, h2, h3, h4, .font-heading {
   border: 1px solid rgba(245, 158, 11, 0.4);
 }
 
-/* No Scrollbar Utility */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* MOBILE RESPONSIVE OVERRIDES */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .glass-panel {
+    border-radius: 16px;
+    padding: 18px !important;
+  }
+
+  .btn {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  /* Responsive header */
+  header {
+    height: auto !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Form controls touch optimization */
+  input, select, textarea {
+    font-size: 14px !important;
+  }
 }

@@ -2,7 +2,7 @@
 <html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Avis Printers | 30+ Years Legacy Printing, Content Writing & Custom Merch</title>
   <meta name="description" content="Avis Printers - Established 1993. Premium GST & GeM Portal Registered Commercial Printing, Content Writing Packages, Signage, Packaging & Merchandise." />
   
@@ -19,7 +19,7 @@
           colors: {
             brand: {
               dark: "#070913",
-              card: "rgba(22, 28, 52, 0.88)",
+              card: "rgba(22, 28, 52, 0.92)",
               accent: "#8b5cf6",
               neon: "#06b6d4",
               amber: "#f59e0b",
@@ -38,64 +38,64 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-[#070913] text-slate-100 selection:bg-purple-600 selection:text-white min-h-screen relative">
+<body class="bg-[#070913] text-slate-100 selection:bg-purple-600 selection:text-white min-h-screen relative overflow-x-hidden">
 
   <!-- Sticky Top Announcement Bar -->
-  <div class="bg-gradient-to-r from-purple-950/90 via-slate-950 to-cyan-950/90 text-xs py-2 px-4 border-b border-white/10 sticky top-0 z-50 backdrop-blur-md">
+  <div class="bg-gradient-to-r from-purple-950/90 via-slate-950 to-cyan-950/90 text-[11px] sm:text-xs py-2 px-3 sm:px-4 border-b border-white/10 sticky top-0 z-50 backdrop-blur-md">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-slate-300">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
         <span class="inline-flex items-center gap-1 text-emerald-400 font-semibold">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5 inline"></i> GeM Portal Account Verified
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 inline"></i> GeM Verified
         </span>
-        <span class="hidden md:inline text-slate-700">|</span>
-        <span class="hidden md:inline-flex items-center gap-1 text-amber-400 font-semibold">
+        <span class="text-slate-700">|</span>
+        <span class="inline-flex items-center gap-1 text-amber-400 font-semibold">
           <i data-lucide="award" class="w-3.5 h-3.5 inline"></i> GST Registered (2010)
         </span>
-        <span class="hidden lg:inline text-slate-700">|</span>
-        <span class="hidden lg:inline text-purple-300 font-semibold">
-          ★ 4.8 / 5 Rated Service (30+ Years Legacy)
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <span class="hidden sm:inline-flex text-purple-300 font-semibold">
+          ★ 4.8/5 Rating (30+ Yrs Legacy)
         </span>
       </div>
-      <div class="flex items-center gap-4 text-xs font-bold">
-        <a href="mailto:Avisprinters2016@gmail.com" class="text-purple-300 hover:text-white flex items-center gap-1 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 inline"></i> Avisprinters2016@gmail.com
-        </a>
+      <div class="flex items-center gap-3 text-[11px] sm:text-xs font-bold">
+        <button onclick="openEmailModal('General Inquiry', 'Hello Avis Printers!')" class="text-purple-300 hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 inline"></i> <span class="hidden xs:inline">Avisprinters2016@gmail.com</span><span class="xs:hidden">Email</span>
+        </button>
         <a href="https://wa.me/919318361225" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> WhatsApp Consultation
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> WhatsApp
         </a>
       </div>
     </div>
   </div>
 
   <!-- Header & Glass Navbar -->
-  <header class="glass-panel border-b border-white/10 sticky top-[33px] z-40 rounded-none border-x-0 border-t-0">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+  <header class="glass-panel border-b border-white/10 sticky top-[31px] z-40 rounded-none border-x-0 border-t-0 px-2 sm:px-0">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
         
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center gap-3 group">
-          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-600 via-indigo-600 to-cyan-500 p-0.5 shadow-xl shadow-purple-500/20 group-hover:scale-105 transition-transform">
-            <div class="w-full h-full bg-[#070913] rounded-[14px] flex items-center justify-center font-black text-xl text-white tracking-wider font-heading">
+        <a href="#" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-purple-600 via-indigo-600 to-cyan-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-[#070913] rounded-[10px] sm:rounded-[14px] flex items-center justify-center font-black text-base sm:text-xl text-white tracking-wider font-heading">
               AP
             </div>
           </div>
           <div>
-            <div class="flex items-center gap-2">
-              <span class="text-2xl font-black tracking-tight text-white font-heading">
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl sm:text-2xl font-black tracking-tight text-white font-heading">
                 AVIS <span class="gradient-text-purple">PRINTERS</span>
               </span>
-              <span class="badge-pill badge-purple">
+              <span class="badge-pill badge-purple text-[9px] sm:text-[10px] px-1.5 py-0.5">
                 EST. 1993
               </span>
             </div>
-            <p class="text-[11px] text-slate-400 tracking-wide font-medium">
+            <p class="text-[10px] sm:text-[11px] text-slate-400 tracking-wide font-medium">
               30+ Yrs Legacy • Print & Content Suite
             </p>
           </div>
         </a>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-300">
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-bold text-slate-300">
           <a href="#catalog" class="hover:text-purple-400 transition-colors">Categories</a>
           <a href="#portfolio" class="hover:text-purple-400 transition-colors">Past Projects</a>
           <a href="#comparison" class="hover:text-purple-400 transition-colors">Why Choose Us</a>
@@ -104,15 +104,15 @@
           <a href="#about" class="hover:text-purple-400 transition-colors">About Us</a>
         </nav>
 
-        <!-- Navbar Action Buttons (Dual WhatsApp + Email CTAs) -->
-        <div class="flex items-center gap-2.5">
-          <a href="mailto:Avisprinters2016@gmail.com?subject=Print%20%26%20Content%20Inquiry" class="btn btn-email py-2.5 px-4 text-xs">
+        <!-- Navbar Action Buttons (Dual Email + WhatsApp CTAs) -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5">
+          <button onclick="openEmailModal('Inquiry via Website', 'Hello Avis Printers team!')" class="btn btn-email py-2 px-3 sm:px-4 text-xs">
             <i data-lucide="mail" class="w-4 h-4"></i>
-            <span>Email Us</span>
-          </a>
-          <a href="https://wa.me/919318361225?text=Hello%20Avis%20Printers!%20I%20want%20to%20inquire%20about%20printing%20and%20content%20packages." target="_blank" class="btn btn-emerald py-2.5 px-4 text-xs">
+            <span class="hidden sm:inline">Email Us</span>
+          </button>
+          <a href="https://wa.me/919318361225?text=Hello%20Avis%20Printers!%20I%20want%20to%20inquire%20about%20printing%20and%20content%20packages." target="_blank" class="btn btn-emerald py-2 px-3 sm:px-4 text-xs">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
-            <span>WhatsApp Us</span>
+            <span class="hidden sm:inline">WhatsApp Us</span>
           </a>
         </div>
 
@@ -121,38 +121,38 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+  <section class="relative overflow-hidden pt-8 pb-14 sm:pt-16 sm:pb-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
         
         <!-- Left Hero Copy -->
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-bold text-purple-300 shadow-sm">
-            <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-bold text-purple-300 shadow-sm">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
             <span>30+ Years Print Excellence & Content Writing Services</span>
           </div>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] font-heading">
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] font-heading">
             30 Years of Craft.<br />
             <span class="gradient-text-purple">Next-Gen Print</span> & Content Suite.
           </h1>
 
-          <p class="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
             Trusted by corporate leaders, government portals, and vibrant D2C Gen-Z brands alike. From luxury foil-stamped stationery, signage, and packaging to professional copywriting packages.
           </p>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0 text-xs font-semibold text-slate-300">
-            <div class="flex items-center gap-2.5 bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-2 max-w-xl mx-auto lg:mx-0 text-xs font-semibold text-slate-300">
+            <div class="flex items-center gap-2 bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-              <span>GeM Portal Account</span>
+              <span>GeM Account</span>
             </div>
-            <div class="flex items-center gap-2.5 bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+            <div class="flex items-center gap-2 bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 shrink-0"></i>
               <span>GST Reg. (2010)</span>
             </div>
-            <div class="flex items-center gap-2.5 bg-slate-900/80 p-3 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
+            <div class="flex items-center gap-2 bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
               <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400 shrink-0"></i>
-              <span>4.8 / 5 Star Rating</span>
+              <span>4.8 / 5 Rating</span>
             </div>
           </div>
 
@@ -160,50 +160,47 @@
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-4">
             <a href="#quote" class="btn btn-primary w-full sm:w-auto py-3.5 px-6">
               <span>Request Custom Quote</span>
-              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
 
             <a href="https://wa.me/919318361225?text=Hi%20Avis%20Printers!%20I%20need%20a%20quick%20quote." target="_blank" class="btn btn-emerald w-full sm:w-auto py-3.5 px-6">
-              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
               <span>WhatsApp Direct</span>
             </a>
 
-            <a href="mailto:Avisprinters2016@gmail.com?subject=Print%20%26%20Content%20Inquiry" class="btn btn-email w-full sm:w-auto py-3.5 px-6">
-              <i data-lucide="mail" class="w-5 h-5"></i>
+            <button onclick="openEmailModal('Direct Quote Request', 'Hi Avis Printers team, I would like a quote.')" class="btn btn-email w-full sm:w-auto py-3.5 px-6">
+              <i data-lucide="mail" class="w-4 h-4"></i>
               <span>Email Us Direct</span>
-            </a>
+            </button>
           </div>
 
-          <div class="pt-6 flex items-center justify-center lg:justify-start gap-4 border-t border-slate-800/80">
+          <div class="pt-4 flex items-center justify-center lg:justify-start gap-3 border-t border-slate-800/80">
             <div class="flex -space-x-2">
-              <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">A</div>
-              <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">B</div>
-              <div class="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">G</div>
+              <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-purple-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">A</div>
+              <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-indigo-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">B</div>
+              <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-cyan-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">G</div>
             </div>
             <div class="text-left">
-              <div class="flex items-center gap-1 text-amber-400 text-sm">
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                <span class="text-white font-bold text-sm ml-1 font-heading">4.8 / 5.0</span>
+              <div class="flex items-center gap-1 text-amber-400 text-xs sm:text-sm">
+                <i data-lucide="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400"></i>
+                <span class="text-white font-bold text-xs sm:text-sm ml-1 font-heading">4.8 / 5.0</span>
               </div>
-              <p class="text-xs text-slate-400">Over 10,000+ Orders Executed Since 1993</p>
+              <p class="text-[11px] sm:text-xs text-slate-400">Over 10,000+ Orders Executed Since 1993</p>
             </div>
           </div>
         </div>
 
-        <!-- Right Card: Quick Spec Builder Widget -->
+        <!-- Right Card: Quick Spec Builder Widget (REMOVED "INSTANT TRIGGER" BADGE!) -->
         <div class="lg:col-span-5">
-          <div class="glass-panel p-6 sm:p-8 space-y-4">
+          <div class="glass-panel p-5 sm:p-8 space-y-4">
             <div class="flex items-center justify-between">
-              <h3 class="text-xl font-extrabold text-white flex items-center gap-2 font-heading">
+              <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2 font-heading">
                 <i data-lucide="layers" class="w-5 h-5 text-purple-400"></i> Quick Spec Builder
               </h3>
-              <span class="badge-pill badge-purple">
-                Instant Trigger
-              </span>
             </div>
 
             <p class="text-xs text-slate-400">
@@ -213,7 +210,7 @@
             <div class="space-y-4">
               <div>
                 <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Category</label>
-                <select id="quickCat" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500">
+                <select id="quickCat" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500">
                   <option value="Business Stationery">1. Business Stationery (Cards, Letterheads, Folders)</option>
                   <option value="Marketing Print">2. Marketing Print (Flyers, Brochures, Posters)</option>
                   <option value="Signage">3. Signage & Large Format (Roll-ups, Vinyl, LED)</option>
@@ -233,7 +230,7 @@
                 <input type="range" min="50" max="10000" step="50" value="500" id="quickQty" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-purple-500" oninput="document.getElementById('qtyVal').innerText = this.value + ' Units'" />
               </div>
 
-              <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
+              <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
                 <div class="flex justify-between">
                   <span class="text-slate-400">GST Invoice:</span>
                   <span class="font-bold text-emerald-400">Available (GSTIN Compliant)</span>
@@ -245,11 +242,11 @@
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <button onclick="triggerQuickWhatsApp()" class="btn btn-emerald py-3.5 text-xs font-bold">
+                <button onclick="triggerQuickWhatsApp()" class="btn btn-emerald py-3 text-xs font-bold">
                   <i data-lucide="message-circle" class="w-4 h-4"></i>
                   <span>WhatsApp Spec</span>
                 </button>
-                <button onclick="triggerQuickEmail()" class="btn btn-email py-3.5 text-xs font-bold">
+                <button onclick="triggerQuickEmail()" class="btn btn-email py-3 text-xs font-bold">
                   <i data-lucide="mail" class="w-4 h-4"></i>
                   <span>Email Spec Direct</span>
                 </button>
@@ -263,89 +260,89 @@
   </section>
 
   <!-- TRUST & LEGACY BAR -->
-  <section class="py-10 bg-slate-950/80 border-y border-slate-800/80 relative z-20">
+  <section class="py-8 sm:py-10 bg-slate-950/80 border-y border-slate-800/80 relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-purple-400 shrink-0">
-            <i data-lucide="clock" class="w-6 h-6"></i>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-800 flex items-center justify-center text-purple-400 shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
           <div>
-            <div class="text-xl font-black text-white font-heading">30+ Years</div>
-            <div class="text-xs font-bold text-slate-300">Legacy of Trust</div>
-            <div class="text-[10px] text-slate-500">Established in 1993</div>
+            <div class="text-lg sm:text-xl font-black text-white font-heading">30+ Years</div>
+            <div class="text-[11px] sm:text-xs font-bold text-slate-300">Legacy of Trust</div>
+            <div class="text-[10px] text-slate-500">Est. 1993</div>
           </div>
         </div>
 
-        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
-            <i data-lucide="shield-check" class="w-6 h-6"></i>
+        <div class="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
           <div>
-            <div class="text-xl font-black text-white font-heading">GeM Account</div>
-            <div class="text-xs font-bold text-slate-300">Portal Verified</div>
-            <div class="text-[10px] text-slate-500">Govt Procurement Partner</div>
+            <div class="text-lg sm:text-xl font-black text-white font-heading">GeM Account</div>
+            <div class="text-[11px] sm:text-xs font-bold text-slate-300">Portal Verified</div>
+            <div class="text-[10px] text-slate-500">Govt Partner</div>
           </div>
         </div>
 
-        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
-            <i data-lucide="award" class="w-6 h-6"></i>
+        <div class="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
+            <i data-lucide="award" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </div>
           <div>
-            <div class="text-xl font-black text-white font-heading">GST Reg. 2010</div>
-            <div class="text-xs font-bold text-slate-300">Tax Compliant</div>
-            <div class="text-[10px] text-slate-500">100% Valid Invoicing</div>
+            <div class="text-lg sm:text-xl font-black text-white font-heading">GST Reg. 2010</div>
+            <div class="text-[11px] sm:text-xs font-bold text-slate-300">Tax Compliant</div>
+            <div class="text-[10px] text-slate-500">100% Tax Invoices</div>
           </div>
         </div>
 
-        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 shrink-0">
-            <i data-lucide="star" class="w-6 h-6 fill-amber-400"></i>
+        <div class="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 shrink-0">
+            <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6 fill-amber-400"></i>
           </div>
           <div>
-            <div class="text-xl font-black text-white font-heading">4.8 / 5.0</div>
-            <div class="text-xs font-bold text-slate-300">Client Rating</div>
-            <div class="text-[10px] text-slate-500">10,000+ Satisfied Orders</div>
+            <div class="text-lg sm:text-xl font-black text-white font-heading">4.8 / 5.0</div>
+            <div class="text-[11px] sm:text-xs font-bold text-slate-300">Client Rating</div>
+            <div class="text-[10px] text-slate-500">10,000+ Orders</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCT & SERVICE CATALOG (8 HIGH-VISIBILITY READABLE CATEGORY CARDS) -->
-  <section id="catalog" class="py-20 lg:py-28 relative">
+  <!-- PRODUCT & SERVICE CATALOG (8 READABLE & MOBILE RESPONSIVE CATEGORIES) -->
+  <section id="catalog" class="py-14 sm:py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
         <div class="badge-pill badge-purple inline-flex">
           <i data-lucide="filter" class="w-3.5 h-3.5"></i> All 8 Product & Content Categories
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-heading">
           Comprehensive Printing & <span class="gradient-text-purple">Content Solutions</span>
         </h2>
-        <p class="text-slate-300 text-base">
+        <p class="text-slate-300 text-sm sm:text-base">
           Explore all our specialized print verticals and content writing packages below.
         </p>
       </div>
 
-      <!-- Categories Grid (8 Cards with High-Visibility Typography & Contrast) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Categories Grid (8 Cards with High Visibility & Mobile Stack) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         
         <!-- Cat 1 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-purple text-xs font-extrabold">Category 1</span>
-              <i data-lucide="file-text" class="w-7 h-7 text-purple-400"></i>
+              <i data-lucide="file-text" class="w-6 h-6 sm:w-7 sm:h-7 text-purple-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Business Stationery</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Business Cards (Gold Foil)</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Letterheads & Slips</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Envelopes</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Presentation Folders</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Executive Desk Pads</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Business Stationery</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Business Cards (Gold Foil)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Letterheads & Slips</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Envelopes</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Presentation Folders</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Executive Desk Pads</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -359,19 +356,19 @@
         </div>
 
         <!-- Cat 2 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-cyan text-xs font-extrabold">Category 2</span>
-              <i data-lucide="megaphone" class="w-7 h-7 text-cyan-400"></i>
+              <i data-lucide="megaphone" class="w-6 h-6 sm:w-7 sm:h-7 text-cyan-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Marketing & Promo</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Flyers & Leaflets (A6-A4)</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Brochures (Bi-Fold/Tri-Fold)</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> HD Posters (A4 to A0)</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Catalogs & Menus</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Vouchers & Tickets</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Marketing & Promo</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Flyers & Leaflets (A6-A4)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Brochures (Bi-Fold/Tri-Fold)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> HD Posters (A4 to A0)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Catalogs & Menus</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Vouchers & Tickets</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -385,19 +382,19 @@
         </div>
 
         <!-- Cat 3 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-amber text-xs font-extrabold">Category 3</span>
-              <i data-lucide="flag" class="w-7 h-7 text-amber-400"></i>
+              <i data-lucide="flag" class="w-6 h-6 sm:w-7 sm:h-7 text-amber-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Signage & Format</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Roll-up & Pop-up Standees</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> All-Weather Flex Banners</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Rigid Foamex & ACP Signs</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Window Graphics & Decals</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> 3D LED Storefront Boards</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Signage & Format</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Roll-up & Pop-up Standees</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> All-Weather Flex Banners</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Rigid Foamex & ACP Signs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Window Graphics & Decals</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> 3D LED Storefront Boards</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -411,19 +408,19 @@
         </div>
 
         <!-- Cat 4 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-emerald text-xs font-extrabold">Category 4</span>
-              <i data-lucide="package" class="w-7 h-7 text-emerald-400"></i>
+              <i data-lucide="package" class="w-6 h-6 sm:w-7 sm:h-7 text-emerald-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Packaging & Labels</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Die-Cut Product Stickers</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Product Boxes</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Mailing Shipping Cartons</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Branded Paper Shopping Bags</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Packing Tape & Tags</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Packaging & Labels</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Die-Cut Product Stickers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Product Boxes</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Mailing Shipping Cartons</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Branded Paper Bags</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Packing Tape & Tags</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -437,19 +434,19 @@
         </div>
 
         <!-- Cat 5 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-purple text-xs font-extrabold">Category 5</span>
-              <i data-lucide="shirt" class="w-7 h-7 text-purple-300"></i>
+              <i data-lucide="shirt" class="w-6 h-6 sm:w-7 sm:h-7 text-purple-300"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Apparel & Merch</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Puff Print Hoodies & Tees</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Embroidered Caps</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Mugs & Water Bottles</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Pens & Executive Diaries</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Lanyards & Swag</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Apparel & Merch</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Puff Print Hoodies & Tees</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Embroidered Caps</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Mugs & Water Bottles</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Pens & Executive Diaries</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Custom Lanyards & Swag</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -463,19 +460,19 @@
         </div>
 
         <!-- Cat 6 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-cyan text-xs font-extrabold">Category 6</span>
-              <i data-lucide="book-open" class="w-7 h-7 text-cyan-400"></i>
+              <i data-lucide="book-open" class="w-6 h-6 sm:w-7 sm:h-7 text-cyan-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Books & Publishing</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Perfect Bound Softcovers</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Hardcover Annual Reports</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Saddle-Stitched Magazines</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Spiral & Wire-O Manuals</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Training & IPD Guides</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Books & Publishing</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Perfect Bound Softcovers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Hardcover Annual Reports</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Saddle-Stitched Magazines</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Spiral & Wire-O Manuals</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Training & IPD Guides</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -489,19 +486,19 @@
         </div>
 
         <!-- Cat 7 -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-amber text-xs font-extrabold">Category 7</span>
-              <i data-lucide="shopping-bag" class="w-7 h-7 text-amber-400"></i>
+              <i data-lucide="shopping-bag" class="w-6 h-6 sm:w-7 sm:h-7 text-amber-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Trading Inventory</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Swachhta Cleanliness Kits</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Women Hygiene Relief Kits</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Artificial Grass Turf Rolls</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Bedsheets & Pillows Supply</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Government Tender Supply</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Trading Inventory</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Swachhta Cleanliness Kits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Women Hygiene Relief Kits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Artificial Grass Turf Rolls</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Bedsheets & Pillows Supply</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Government Tender Supply</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -515,19 +512,19 @@
         </div>
 
         <!-- Cat 8: CONTENT WRITING PACKAGE -->
-        <div class="glass-panel category-card p-6 flex flex-col justify-between space-y-6 border-purple-500/50 shadow-2xl">
+        <div class="glass-panel category-card p-5 sm:p-6 flex flex-col justify-between space-y-5 border-purple-500/50 shadow-2xl">
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3">
               <span class="badge-pill badge-emerald text-xs font-extrabold">Category 8</span>
-              <i data-lucide="pen-tool" class="w-7 h-7 text-emerald-400"></i>
+              <i data-lucide="pen-tool" class="w-6 h-6 sm:w-7 sm:h-7 text-emerald-400"></i>
             </div>
-            <h3 class="text-2xl font-black text-white mb-3 font-heading">Content Package</h3>
-            <ul class="text-sm font-semibold text-slate-200 space-y-2.5 mb-4">
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Blog Posts & SEO Articles</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> E-Commerce Product Copy</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Commercial & Video Scripts</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Case Studies & Whitepapers</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Press Releases & Social Posts</li>
+            <h3 class="text-xl sm:text-2xl font-black text-white mb-2.5 font-heading">Content Package</h3>
+            <ul class="text-xs sm:text-sm font-semibold text-slate-200 space-y-2 mb-4">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Blog Posts & SEO Articles</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> E-Commerce Product Copy</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Commercial & Video Scripts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Case Studies & Whitepapers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Press Releases & Social Posts</li>
             </ul>
           </div>
           <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
@@ -546,32 +543,32 @@
   </section>
 
   <!-- DEDICATED PAST PROJECTS SHOWCASE -->
-  <section id="portfolio" class="py-20 lg:py-28 bg-slate-950/70 border-t border-slate-800/80 relative">
+  <section id="portfolio" class="py-14 sm:py-24 bg-slate-950/70 border-t border-slate-800/80 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-10 space-y-4">
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-3">
         <div class="badge-pill badge-cyan inline-flex">
-          <i data-lucide="layers" class="w-3.5 h-3.5"></i> Comprehensive Real Work Gallery
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i> Real Work Gallery
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-heading">
           Real Projects & <span class="gradient-text-purple">Execution Showcase</span>
         </h2>
-        <p class="text-slate-300 text-base">
+        <p class="text-slate-300 text-sm sm:text-base">
           Browse through authentic print jobs executed by Avis Printers for corporate clients, government campaigns, and D2C brands. Click any project to inspect specs and order a similar print!
         </p>
       </div>
 
       <!-- Controls: Filter Tabs & Real-Time Search -->
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 sm:mb-10">
         
         <div class="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar w-full md:w-auto">
-          <button onclick="filterProjects('all')" class="project-tab-btn active px-5 py-2.5 rounded-full text-xs font-bold bg-purple-600 text-white shadow-lg">All Projects</button>
-          <button onclick="filterProjects('govt')" class="project-tab-btn px-5 py-2.5 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Govt & Public</button>
-          <button onclick="filterProjects('signage')" class="project-tab-btn px-5 py-2.5 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Signage & Flex</button>
-          <button onclick="filterProjects('packaging')" class="project-tab-btn px-5 py-2.5 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Packaging & Stickers</button>
-          <button onclick="filterProjects('marketing')" class="project-tab-btn px-5 py-2.5 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Flyers & Posters</button>
-          <button onclick="filterProjects('stationery')" class="project-tab-btn px-5 py-2.5 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Stationery & Books</button>
+          <button onclick="filterProjects('all')" class="project-tab-btn active px-4 py-2 rounded-full text-xs font-bold bg-purple-600 text-white shadow-lg whitespace-nowrap">All Projects</button>
+          <button onclick="filterProjects('govt')" class="project-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">Govt & Public</button>
+          <button onclick="filterProjects('signage')" class="project-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">Signage & Flex</button>
+          <button onclick="filterProjects('packaging')" class="project-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">Packaging & Stickers</button>
+          <button onclick="filterProjects('marketing')" class="project-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">Flyers & Posters</button>
+          <button onclick="filterProjects('stationery')" class="project-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">Stationery & Books</button>
         </div>
 
         <div class="relative w-full md:w-72">
@@ -582,86 +579,11 @@
       </div>
 
       <!-- Real Past Projects Cards Grid -->
-      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Card 1 -->
-        <div class="glass-panel rounded-3xl overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all group flex flex-col justify-between shadow-xl">
-          <div class="bg-white p-4 flex items-center justify-center h-[220px] border-b border-slate-800 relative overflow-hidden cursor-pointer" onclick="openLightbox(1)">
-            <img src="./assets/projects/sandhya_logo.png" alt="Sandhya - Creative Designer Branding" class="w-full h-full object-contain max-h-36 group-hover:scale-105 transition-transform" />
-            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-slate-950/90 text-purple-300 border border-purple-500/30 shadow">Vector & Brand Suite</span>
-          </div>
-          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">Sandhya - Creative Designer Branding</h3>
-              <p class="text-xs text-slate-300 mt-1 leading-relaxed">Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.</p>
-            </div>
-            <div class="pt-3 flex justify-between items-center text-xs font-semibold border-t border-slate-800/80">
-              <span class="text-cyan-400 font-bold">Vector Logo Design</span>
-              <div class="flex items-center gap-2">
-                <button onclick="orderSimilar('Sandhya - Creative Designer Branding')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
-                </button>
-                <button onclick="orderSimilarEmail('Sandhya - Creative Designer Branding')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="glass-panel rounded-3xl overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all group flex flex-col justify-between shadow-xl">
-          <div class="bg-slate-900 p-2 flex items-center justify-center h-[220px] border-b border-slate-800 relative overflow-hidden cursor-pointer" onclick="openLightbox(2)">
-            <img src="./assets/projects/inauguration_plate_july_2026.jpg" alt="Official Inscription & Inauguration Plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-slate-950/90 text-purple-300 border border-purple-500/30 shadow">Government & Corporate</span>
-          </div>
-          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">Official Inscription & Inauguration Plate</h3>
-              <p class="text-xs text-slate-300 mt-1 leading-relaxed">Acid-etched brass & stainless steel inauguration plate for official foundation stone ceremonies.</p>
-            </div>
-            <div class="pt-3 flex justify-between items-center text-xs font-semibold border-t border-slate-800/80">
-              <span class="text-cyan-400 font-bold">Acid-Etched Deep Lettering</span>
-              <div class="flex items-center gap-2">
-                <button onclick="orderSimilar('Official Inscription & Inauguration Plate')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
-                </button>
-                <button onclick="orderSimilarEmail('Official Inscription & Inauguration Plate')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="glass-panel rounded-3xl overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all group flex flex-col justify-between shadow-xl">
-          <div class="bg-slate-900 p-2 flex items-center justify-center h-[220px] border-b border-slate-800 relative overflow-hidden cursor-pointer" onclick="openLightbox(3)">
-            <img src="./assets/projects/badges_2026.jpg" alt="Gloss Laminated Custom Event Badges" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-slate-950/90 text-purple-300 border border-purple-500/30 shadow">Summit & Conference Merch</span>
-          </div>
-          <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">Gloss Laminated Custom Event Badges</h3>
-              <p class="text-xs text-slate-300 mt-1 leading-relaxed">Metallic pin badges with gloss dome lamination for official summit delegates and event personnel.</p>
-            </div>
-            <div class="pt-3 flex justify-between items-center text-xs font-semibold border-t border-slate-800/80">
-              <span class="text-cyan-400 font-bold">Gloss Laminated Metallic Pins</span>
-              <div class="flex items-center gap-2">
-                <button onclick="orderSimilar('Gloss Laminated Custom Event Badges')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
-                </button>
-                <button onclick="orderSimilarEmail('Gloss Laminated Custom Event Badges')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-                  <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Cards rendered via JS -->
       </div>
 
-      <div class="text-center mt-12">
+      <div class="text-center mt-10">
         <button id="loadMoreBtn" onclick="toggleLoadMore()" class="btn btn-secondary px-8 py-3.5 text-xs">
           <span>Show More Projects</span>
           <i data-lucide="chevron-down" class="w-4 h-4"></i>
@@ -672,53 +594,53 @@
   </section>
 
   <!-- COMPETITOR COMPARISON MATRIX SECTION ("WHY CHOOSE AVIS PRINTERS") -->
-  <section id="comparison" class="py-20 lg:py-28 bg-slate-950 border-t border-slate-800 relative">
+  <section id="comparison" class="py-14 sm:py-24 bg-slate-950 border-t border-slate-800 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
         <div class="badge-pill badge-amber inline-flex">
           <i data-lucide="award" class="w-3.5 h-3.5"></i> Clear Unmatched Edge
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-heading">
           Why Choose <span class="gradient-text-purple">Avis Printers</span>
         </h2>
-        <p class="text-slate-300 text-base">
+        <p class="text-slate-300 text-sm sm:text-base">
           A side-by-side evaluation of how Avis Printers outperforms unorganized local print shops and generic online automated portals.
         </p>
       </div>
 
-      <!-- Comparison Matrix Table -->
-      <div class="glass-panel rounded-3xl overflow-hidden border border-purple-500/30 shadow-2xl">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+      <!-- Comparison Matrix Table (Mobile Responsive Horizontal Scroll) -->
+      <div class="glass-panel rounded-2xl sm:rounded-3xl overflow-hidden border border-purple-500/30 shadow-2xl">
+        <div class="overflow-x-auto no-scrollbar">
+          <table class="w-full text-left text-xs sm:text-sm text-slate-300 min-w-[640px]">
             
-            <thead class="bg-slate-900/90 border-b border-slate-800 text-slate-200 font-extrabold uppercase text-[11px] tracking-wider">
+            <thead class="bg-slate-900/90 border-b border-slate-800 text-slate-200 font-extrabold uppercase text-[10px] sm:text-[11px] tracking-wider">
               <tr>
-                <th class="p-5 sm:p-6 w-1/3">Key Evaluation Factors</th>
-                <th class="p-5 sm:p-6 w-1/3 text-emerald-400 bg-emerald-950/30 border-x border-emerald-500/20 text-sm">
+                <th class="p-4 sm:p-6 w-1/3">Key Evaluation Factors</th>
+                <th class="p-4 sm:p-6 w-1/3 text-emerald-400 bg-emerald-950/30 border-x border-emerald-500/20 text-xs sm:text-sm">
                   <div class="flex items-center gap-2">
-                    <div class="w-7 h-7 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xs font-heading">AP</div>
+                    <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xs font-heading">AP</div>
                     <span>Avis Printers (Est. 1993)</span>
                   </div>
                 </th>
-                <th class="p-5 sm:p-6 w-1/3 text-slate-400">Other Local / Online Sites</th>
+                <th class="p-4 sm:p-6 w-1/3 text-slate-400">Other Local / Online Sites</th>
               </tr>
             </thead>
 
             <tbody class="divide-y divide-slate-800/80">
               
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="clock" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>1. 30+ Years Experience & Trust</span>
+                  <span>1. 30+ Years Experience</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Established in 1993. 30+ years of continuous print & content expertise with 4.8/5 rating.</span>
+                    <span>Established in 1993. 30+ years of print & content expertise with 4.8/5 rating.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>New unverified vendors or generic automated brokers with no legacy track record.</span>
@@ -727,17 +649,17 @@
               </tr>
 
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="sparkles" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>2. Uncompromising Print & Content Quality</span>
+                  <span>2. Uncompromising Quality</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Heidelberg Offset & 1440 DPI Eco-UV presses + Professional Copywriting & SEO articles.</span>
+                    <span>Heidelberg Offset & 1440 DPI Eco-UV presses + Professional Copywriting.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>Thin low-grade paper stocks, faded inks, and generic unedited AI content.</span>
@@ -746,17 +668,17 @@
               </tr>
 
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="zap" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>3. Timely Delivery & Express Speed</span>
+                  <span>3. Timely Delivery Speed</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Guaranteed 24-48 Hour Express Dispatch for urgent campaigns, exhibitions & event deadlines.</span>
+                    <span>Guaranteed 24-48 Hour Express Dispatch for urgent campaigns & event deadlines.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>Unpredictable delays, missing event deadlines, and zero shipping tracking updates.</span>
@@ -765,17 +687,17 @@
               </tr>
 
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="user-check" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>4. Expert In-House Design & Copywriters</span>
+                  <span>4. Expert Designers & Writers</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Senior print engineers and professional copywriters review resolution, bleeds, and content structure.</span>
+                    <span>Senior print engineers and professional copywriters review bleeds, resolution & structure.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>Automated self-service bots with zero human design or editorial review.</span>
@@ -784,17 +706,17 @@
               </tr>
 
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="headphones" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>5. After Work Service & Guarantee</span>
+                  <span>5. After Work Guarantee</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Direct WhatsApp & Email support consultation. Free re-print guarantee if any defect occurs.</span>
+                    <span>Direct WhatsApp & Email support consultation. Free re-print guarantee if defect occurs.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>No post-delivery support or refund policy once payment is collected.</span>
@@ -803,17 +725,17 @@
               </tr>
 
               <tr class="hover:bg-slate-900/40 transition-colors">
-                <td class="p-5 sm:p-6 font-bold text-white flex items-center gap-2.5 font-heading">
+                <td class="p-4 sm:p-6 font-bold text-white flex items-center gap-2 font-heading">
                   <i data-lucide="shield-check" class="w-4 h-4 text-purple-400 shrink-0"></i>
-                  <span>6. GeM Portal & GST Tax Invoicing</span>
+                  <span>6. GeM & GST Tax Invoicing</span>
                 </td>
-                <td class="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                <td class="p-4 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
                   <div class="flex items-start gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                    <span>Active GeM Portal Account for Govt procurement & GST Number issued in 2010 for valid tax credits.</span>
+                    <span>Active GeM Portal Account for Govt procurement & GST Number issued in 2010.</span>
                   </div>
                 </td>
-                <td class="p-5 sm:p-6 text-slate-400">
+                <td class="p-4 sm:p-6 text-slate-400">
                   <div class="flex items-start gap-2">
                     <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
                     <span>Unregistered vendors unable to provide GeM billing or valid GST Tax Invoices.</span>
@@ -830,17 +752,17 @@
   </section>
 
   <!-- INTERACTIVE SLIDING TESTIMONIALS CAROUSEL -->
-  <section id="testimonials" class="py-20 lg:py-28 relative">
+  <section id="testimonials" class="py-14 sm:py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center space-y-4 mb-12">
+      <div class="text-center space-y-3 mb-10">
         <div class="badge-pill badge-amber inline-flex">
           <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i> Authentic Client Stories
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-heading">
           What Our Clients Say <span class="gradient-text-purple">About Avis</span>
         </h2>
-        <p class="text-slate-300 text-base">
+        <p class="text-slate-300 text-sm sm:text-base">
           Real feedback from government procurement officers, hospital event leads, local business owners, and brand founders.
         </p>
       </div>
@@ -851,18 +773,18 @@
           <!-- Slide rendered via JS -->
         </div>
 
-        <!-- Navigation Buttons -->
-        <div class="flex items-center justify-between mt-8">
-          <button onclick="prevTestimonial()" class="btn btn-secondary p-3 rounded-full hover:bg-purple-600 transition-colors">
-            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        <!-- Navigation Controls -->
+        <div class="flex items-center justify-between mt-6">
+          <button onclick="prevTestimonial()" class="btn btn-secondary p-2.5 sm:p-3 rounded-full hover:bg-purple-600 transition-colors">
+            <i data-lucide="chevron-left" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </button>
           
-          <div id="testimonialDots" class="flex items-center gap-2">
+          <div id="testimonialDots" class="flex items-center gap-1.5 sm:gap-2">
             <!-- Dots rendered via JS -->
           </div>
 
-          <button onclick="nextTestimonial()" class="btn btn-secondary p-3 rounded-full hover:bg-purple-600 transition-colors">
-            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+          <button onclick="nextTestimonial()" class="btn btn-secondary p-2.5 sm:p-3 rounded-full hover:bg-purple-600 transition-colors">
+            <i data-lucide="chevron-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
           </button>
         </div>
       </div>
@@ -871,10 +793,10 @@
   </section>
 
   <!-- FAQ ACCORDION SECTION -->
-  <section id="faq" class="py-20 lg:py-28 bg-slate-950/80 border-t border-slate-800">
+  <section id="faq" class="py-14 sm:py-24 bg-slate-950/80 border-t border-slate-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center space-y-4 mb-12">
+      <div class="text-center space-y-3 mb-10">
         <div class="badge-pill badge-purple inline-flex">
           <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> Frequently Asked Questions
         </div>
@@ -888,40 +810,40 @@
 
       <div class="space-y-4">
         
-        <div class="glass-panel p-6 cursor-pointer" onclick="toggleFaq(this)">
-          <div class="flex items-center justify-between font-bold text-sm text-white font-heading">
+        <div class="glass-panel p-5 sm:p-6 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex items-center justify-between font-bold text-xs sm:text-sm text-white font-heading">
             <span>1. How do I place an order via WhatsApp, Email or GeM Portal?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+            <i data-lucide="chevron-down" class="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 transition-transform"></i>
           </div>
           <p class="text-xs text-slate-300 mt-3 hidden leading-relaxed">
             You can fill out our Instant Quote Form on this website (which lets you send via WhatsApp or Email directly to Avisprinters2016@gmail.com) or share your purchase order on our GeM Portal registered account. Senior managers will immediately confirm specs and timeline.
           </p>
         </div>
 
-        <div class="glass-panel p-6 cursor-pointer" onclick="toggleFaq(this)">
-          <div class="flex items-center justify-between font-bold text-sm text-white font-heading">
+        <div class="glass-panel p-5 sm:p-6 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex items-center justify-between font-bold text-xs sm:text-sm text-white font-heading">
             <span>2. Do you issue GST Tax Invoices for corporate & institutional orders?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+            <i data-lucide="chevron-down" class="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 transition-transform"></i>
           </div>
           <p class="text-xs text-slate-300 mt-3 hidden leading-relaxed">
             Yes! Avis Printers is a fully registered firm with an official GST Number issued in 2010. Every commercial and government order includes a valid 100% tax compliant GST invoice.
           </p>
         </div>
 
-        <div class="glass-panel p-6 cursor-pointer" onclick="toggleFaq(this)">
-          <div class="flex items-center justify-between font-bold text-sm text-white font-heading">
+        <div class="glass-panel p-5 sm:p-6 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex items-center justify-between font-bold text-xs sm:text-sm text-white font-heading">
             <span>3. What is the turnaround time for urgent express orders?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+            <i data-lucide="chevron-down" class="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 transition-transform"></i>
           </div>
           <p class="text-xs text-slate-300 mt-3 hidden leading-relaxed">
             Standard orders are completed within 2 to 4 business days. For urgent events, conferences, or launch campaigns, we provide 24 to 48-Hour Express Dispatch for roll-up standees, banners, and flyers.
           </p>
         </div>
 
-        <div class="glass-panel p-6 cursor-pointer" onclick="toggleFaq(this)">
-          <div class="flex items-center justify-between font-bold text-sm text-white font-heading">
+        <div class="glass-panel p-5 sm:p-6 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex items-center justify-between font-bold text-xs sm:text-sm text-white font-heading">
             <span>4. Can Avis Printers assist us with artwork design, copywriting, and layout?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+            <i data-lucide="chevron-down" class="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 transition-transform"></i>
           </div>
           <p class="text-xs text-slate-300 mt-3 hidden leading-relaxed">
             Absolutely! Whether you need print-ready vector files, custom logo branding, or full content writing packages (blogs, product descriptions, video scripts, press releases), our in-house team handles it all from scratch.
@@ -934,10 +856,10 @@
   </section>
 
   <!-- LEAD GENERATION FORM (DUAL WHATSAPP + DIRECT EMAIL SUBMIT) -->
-  <section id="quote" class="py-20 lg:py-28 relative">
+  <section id="quote" class="py-14 sm:py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <div class="text-center space-y-4 mb-12">
+      <div class="text-center space-y-3 mb-10">
         <div class="badge-pill badge-emerald inline-flex">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Dual Quote Dispatch (WhatsApp & Direct Email)
         </div>
@@ -949,32 +871,32 @@
         </p>
       </div>
 
-      <div class="glass-panel p-8 sm:p-12 border border-purple-500/30 shadow-2xl">
-        <form onsubmit="handleLeadSubmit(event)" class="space-y-6">
+      <div class="glass-panel p-6 sm:p-10 border border-purple-500/30 shadow-2xl">
+        <form onsubmit="handleLeadSubmit(event)" class="space-y-5">
           
           <div>
             <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
               Name & Company Name <span class="text-purple-400">*</span>
             </label>
-            <input type="text" id="leadName" required placeholder="e.g. Rahul Sharma (Apex Tech)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors" />
+            <input type="text" id="leadName" required placeholder="e.g. Rahul Sharma (Apex Tech)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500" />
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Phone No <span class="text-purple-400">*</span></label>
-              <input type="tel" id="leadPhone" required placeholder="e.g. Mobile / Phone Number" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors" />
+              <input type="tel" id="leadPhone" required placeholder="e.g. Mobile / Phone Number" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500" />
             </div>
 
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Email Address <span class="text-purple-400">*</span></label>
-              <input type="email" id="leadEmail" required placeholder="e.g. info@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors" />
+              <input type="email" id="leadEmail" required placeholder="e.g. info@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500" />
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Product Category <span class="text-purple-400">*</span></label>
-              <select id="leadCategory" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors">
+              <select id="leadCategory" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500">
                 <option value="Business Stationery">Business Stationery</option>
                 <option value="Marketing Print">Marketing Print</option>
                 <option value="Signage">Signage</option>
@@ -989,39 +911,39 @@
 
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Quantity Needed <span class="text-purple-400">*</span></label>
-              <input type="text" id="leadQty" required placeholder="e.g. 500 pcs or 5 articles" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors" />
+              <input type="text" id="leadQty" required placeholder="e.g. 500 pcs or 5 articles" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500" />
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Designing / Copywriting</label>
-              <select id="leadDesign" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors">
+              <select id="leadDesign" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500">
                 <option value="Ours (Need Avis Team)">Ours (Need Avis Creative Team)</option>
                 <option value="Yours (File / Brief Ready)">Yours (I will provide file / brief)</option>
               </select>
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">When do you absolutely need this in hand?</label>
-              <input type="date" id="leadDate" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors" />
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">When do you need this in hand?</label>
+              <input type="date" id="leadDate" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500" />
             </div>
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Product / Content Description (Optional)</label>
-            <textarea id="leadDesc" rows="3" placeholder="Dimensions, paper finish, topic topics, target audience, or special notes..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-purple-500 transition-colors"></textarea>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Description (Optional)</label>
+            <textarea id="leadDesc" rows="3" placeholder="Dimensions, paper finish, topic topics, target audience..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3.5 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500"></textarea>
           </div>
 
           <!-- Dual Form Submit Buttons -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <button type="submit" class="btn btn-emerald w-full py-4 text-sm font-extrabold flex items-center justify-center gap-2">
-              <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button type="submit" class="btn btn-emerald w-full py-3.5 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
               <span>Submit via WhatsApp</span>
             </button>
 
-            <button type="button" onclick="handleEmailLeadSubmit()" class="btn btn-email w-full py-4 text-sm font-extrabold flex items-center justify-center gap-2">
-              <i data-lucide="mail" class="w-5 h-5"></i>
+            <button type="button" onclick="handleEmailLeadSubmit()" class="btn btn-email w-full py-3.5 text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4"></i>
               <span>Submit via Email Direct</span>
             </button>
           </div>
@@ -1031,11 +953,11 @@
   </section>
 
   <!-- ABOUT US SECTION -->
-  <section id="about" class="py-20 lg:py-28 bg-slate-950/80 border-t border-slate-800">
+  <section id="about" class="py-14 sm:py-24 bg-slate-950/80 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
         
-        <div class="lg:col-span-6 space-y-6">
+        <div class="lg:col-span-6 space-y-4 sm:space-y-6">
           <div class="badge-pill badge-purple inline-flex">
             <i data-lucide="clock" class="w-3.5 h-3.5"></i> Est. 1993 • 30+ Years Service
           </div>
@@ -1046,7 +968,7 @@
             Set up in the year <strong>1993</strong>, <strong>Avis Printers</strong> is a registered firm with its GST Number issued in the year <strong>2010</strong>. Avis Printers also holds a functional account on the <strong>GEM Portal</strong>. With a fantastic rating of <strong>4.8/5</strong>, we stand true to our commitment and spirit of service to our customers for the past 30 years.
           </p>
 
-          <div class="glass-panel p-6 space-y-2">
+          <div class="glass-panel p-5 sm:p-6 space-y-2">
             <h3 class="text-base font-bold text-white flex items-center gap-2 font-heading">
               <i data-lucide="target" class="w-5 h-5 text-purple-400"></i> Mission & Vision
             </h3>
@@ -1057,14 +979,14 @@
         </div>
 
         <div class="lg:col-span-6">
-          <div class="glass-panel p-8 space-y-4">
-            <h3 class="text-xl font-bold text-white flex items-center gap-2 font-heading">
-              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i> Key Credentials Summary
+          <div class="glass-panel p-6 sm:p-8 space-y-4">
+            <h3 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2 font-heading">
+              <i data-lucide="shield-check" class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400"></i> Key Credentials Summary
             </h3>
-            <div class="space-y-3 text-xs text-slate-300">
+            <div class="space-y-2.5 text-xs text-slate-300">
               <div class="flex justify-between py-2 border-b border-slate-800">
                 <span>Established Year:</span>
-                <span class="text-white font-bold">1993 (30+ Years Legacy)</span>
+                <span class="text-white font-bold">1993 (30+ Years)</span>
               </div>
               <div class="flex justify-between py-2 border-b border-slate-800">
                 <span>GST Registration:</span>
@@ -1072,19 +994,19 @@
               </div>
               <div class="flex justify-between py-2 border-b border-slate-800">
                 <span>Government Portal:</span>
-                <span class="text-cyan-400 font-bold">GeM Active Vendor Account</span>
+                <span class="text-cyan-400 font-bold">GeM Active Account</span>
               </div>
               <div class="flex justify-between py-2 border-b border-slate-800">
-                <span>Customer Satisfaction Rating:</span>
+                <span>Customer Rating:</span>
                 <span class="text-emerald-400 font-bold">★ 4.8 / 5.0 Rated</span>
               </div>
               <div class="flex justify-between py-2 border-b border-slate-800">
                 <span>Official Contact Email:</span>
-                <a href="mailto:Avisprinters2016@gmail.com" class="text-purple-300 font-bold hover:underline">Avisprinters2016@gmail.com</a>
+                <button onclick="openEmailModal('General Contact', 'Hello Avis Printers')" class="text-purple-300 font-bold hover:underline">Avisprinters2016@gmail.com</button>
               </div>
               <div class="flex justify-between py-2">
                 <span>WhatsApp Helpline:</span>
-                <span class="text-emerald-400 font-bold">Instant Consultation Active</span>
+                <span class="text-emerald-400 font-bold">Active Consultation</span>
               </div>
             </div>
           </div>
@@ -1095,16 +1017,16 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-10 sm:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
       <div>
         <div class="text-base font-black text-white font-heading">AVIS PRINTERS</div>
         <p class="text-xs text-slate-500">Est. 1993 • GST Reg. 2010 • GeM Portal Active Account</p>
       </div>
-      <div class="flex items-center gap-6 text-xs font-bold">
-        <a href="mailto:Avisprinters2016@gmail.com" class="text-purple-300 hover:text-white transition-colors flex items-center gap-1">
+      <div class="flex items-center justify-center gap-4 sm:gap-6 text-xs font-bold flex-wrap">
+        <button onclick="openEmailModal('Footer Inquiry', 'Hello Avis Printers team!')" class="text-purple-300 hover:text-white transition-colors flex items-center gap-1">
           <i data-lucide="mail" class="w-4 h-4"></i> Avisprinters2016@gmail.com
-        </a>
+        </button>
         <a href="https://wa.me/919318361225" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1">
           <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Consultation
         </a>
@@ -1113,11 +1035,52 @@
   </footer>
 
   <!-- FLOATING WHATSAPP ACTION BUTTON -->
-  <div class="fixed bottom-6 right-6 z-50">
-    <a href="https://wa.me/919318361225?text=Hello%20Avis%20Printers!%20I%20want%20to%20chat." target="_blank" class="w-14 h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:scale-110 text-white shadow-2xl flex items-center justify-center relative transition-transform">
-      <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-emerald-400 rounded-full border-2 border-slate-950"></span>
-      <i data-lucide="message-circle" class="w-7 h-7 fill-white"></i>
+  <div class="fixed bottom-5 right-5 z-40">
+    <a href="https://wa.me/919318361225?text=Hello%20Avis%20Printers!%20I%20want%20to%20chat." target="_blank" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:scale-110 text-white shadow-2xl flex items-center justify-center relative transition-transform">
+      <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-slate-950"></span>
+      <i data-lucide="message-circle" class="w-6 h-6 sm:w-7 sm:h-7 fill-white"></i>
     </a>
+  </div>
+
+  <!-- INTERACTIVE DESKTOP & MOBILE EMAIL OPTIONS MODAL -->
+  <div id="emailModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden">
+    <div class="glass-panel max-w-md w-full p-6 relative space-y-5 border border-purple-500/40 shadow-2xl">
+      <button onclick="closeEmailModal()" class="absolute top-4 right-4 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="space-y-2 text-center sm:text-left">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto sm:mx-0 border border-indigo-500/30">
+          <i data-lucide="mail" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-extrabold text-white font-heading">Choose Your Email Method</h3>
+        <p class="text-xs text-slate-300">
+          Sending inquiry to official email: <strong id="targetEmailText" class="text-purple-300">Avisprinters2016@gmail.com</strong>
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- Choice 1: Launch Gmail Web (Works 100% on any browser!) -->
+        <button onclick="launchGmailWeb()" class="w-full btn btn-primary py-3.5 text-xs font-bold flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4"></i>
+            <span>Open in Gmail Web (Browser)</span>
+          </div>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+
+        <!-- Choice 2: Copy Email Address -->
+        <button id="copyEmailBtn" onclick="copyEmailAddress()" class="w-full btn btn-secondary py-3.5 text-xs font-bold flex items-center justify-center gap-2">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          <span>Copy Email Address</span>
+        </button>
+
+        <!-- Choice 3: Launch Default Desktop Mail App -->
+        <button onclick="launchDefaultMailClient()" class="w-full py-2.5 text-xs font-semibold text-slate-400 hover:text-white transition-colors text-center block">
+          Or launch default desktop mail app (Outlook/Mail)
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- LIGHTBOX MODAL FOR HIGH-RES PROJECT INSPECTION -->

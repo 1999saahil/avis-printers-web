@@ -117,6 +117,8 @@ let currentFilter = 'all';
 let visibleCount = 6;
 let currentTestimonialIndex = 0;
 let testimonialTimer = null;
+let currentEmailSubject = "";
+let currentEmailBody = "";
 
 // Render Gallery Cards
 function renderProjects() {
@@ -157,9 +159,9 @@ function renderProjects() {
         </div>
         <div class="pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-xs font-semibold border-t border-slate-800/80">
           <span class="text-cyan-400 font-bold">${p.specs[0]}</span>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 w-full sm:w-auto">
             <button onclick="orderSimilar('${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order WhatsApp
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
             </button>
             <button onclick="orderSimilarEmail('${p.title}')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
               <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
@@ -172,11 +174,7 @@ function renderProjects() {
 
   const btn = document.getElementById('loadMoreBtn');
   if (btn) {
-    if (visibleCount >= filtered.length) {
-      btn.style.display = 'none';
-    } else {
-      btn.style.display = 'inline-flex';
-    }
+    btn.style.display = visibleCount >= filtered.length ? 'none' : 'inline-flex';
   }
 
   if (window.lucide) lucide.createIcons();
@@ -272,25 +270,25 @@ function renderTestimonials() {
                      t.badgeColor === 'amber' ? 'badge-amber' : 'badge-cyan';
 
   container.innerHTML = `
-    <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-purple-500/30 shadow-2xl space-y-6 text-left transition-all duration-500 transform">
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-purple-500/30 shadow-2xl space-y-6 text-left transition-all duration-500 transform">
       <div class="flex items-center justify-between flex-wrap gap-2">
         <div class="flex text-amber-400 gap-1">
-          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400"></i>
         </div>
         <span class="badge-pill ${badgeClass} text-xs">${t.badge}</span>
       </div>
 
-      <p class="text-base sm:text-lg text-slate-200 italic leading-relaxed font-medium">
+      <p class="text-sm sm:text-lg text-slate-200 italic leading-relaxed font-medium">
         "${t.quote}"
       </p>
 
       <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
         <div>
-          <h4 class="text-base font-extrabold text-white font-heading">${t.name}</h4>
+          <h4 class="text-sm sm:text-base font-extrabold text-white font-heading">${t.name}</h4>
           <p class="text-xs text-purple-400 font-semibold">${t.role}</p>
         </div>
         <div class="text-xs text-slate-500 font-bold">
@@ -302,7 +300,7 @@ function renderTestimonials() {
 
   if (dotsContainer) {
     dotsContainer.innerHTML = testimonialsData.map((_, idx) => `
-      <button onclick="goToTestimonial(${idx})" class="w-3 h-3 rounded-full transition-all ${idx === currentTestimonialIndex ? 'bg-purple-500 w-8' : 'bg-slate-800 hover:bg-slate-700'}"></button>
+      <button onclick="goToTestimonial(${idx})" class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all ${idx === currentTestimonialIndex ? 'bg-purple-500 w-6 sm:w-8' : 'bg-slate-800 hover:bg-slate-700'}"></button>
     `).join('');
   }
 
@@ -346,7 +344,54 @@ function toggleFaq(elem) {
   }
 }
 
-// Action Handlers: WhatsApp & Direct Email
+// EMAIL POPUP MODAL & HANDLERS (Desktop Fail-Safe!)
+function openEmailModal(subject, body) {
+  currentEmailSubject = subject || "Inquiry for Avis Printers";
+  currentEmailBody = body || "Hello Avis Printers,\n\nI would like to request details and pricing for my project.\n\nThank you!";
+
+  const modal = document.getElementById('emailModal');
+  if (!modal) return;
+
+  const targetEmailSpan = document.getElementById('targetEmailText');
+  if (targetEmailSpan) targetEmailSpan.innerText = OFFICIAL_EMAIL;
+
+  modal.classList.remove('hidden');
+  if (window.lucide) lucide.createIcons();
+}
+
+function closeEmailModal() {
+  document.getElementById('emailModal')?.classList.add('hidden');
+}
+
+function launchGmailWeb() {
+  const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(OFFICIAL_EMAIL)}&su=${encodeURIComponent(currentEmailSubject)}&body=${encodeURIComponent(currentEmailBody)}`;
+  window.open(url, '_blank');
+  closeEmailModal();
+}
+
+function launchDefaultMailClient() {
+  const url = `mailto:${OFFICIAL_EMAIL}?subject=${encodeURIComponent(currentEmailSubject)}&body=${encodeURIComponent(currentEmailBody)}`;
+  window.location.href = url;
+  closeEmailModal();
+}
+
+function copyEmailAddress() {
+  navigator.clipboard.writeText(OFFICIAL_EMAIL).then(() => {
+    const btn = document.getElementById('copyEmailBtn');
+    if (btn) {
+      btn.innerHTML = `<i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span class="text-emerald-400">Email Address Copied!</span>`;
+      if (window.lucide) lucide.createIcons();
+      setTimeout(() => {
+        btn.innerHTML = `<i data-lucide="copy" class="w-4 h-4"></i> <span>Copy Email Address</span>`;
+        if (window.lucide) lucide.createIcons();
+      }, 2500);
+    }
+  }).catch(() => {
+    alert(`Avis Printers Official Email: ${OFFICIAL_EMAIL}`);
+  });
+}
+
+// Quick Actions
 function triggerQuickWhatsApp() {
   const cat = document.getElementById('quickCat')?.value || 'General';
   const qty = document.getElementById('quickQty')?.value || '500';
@@ -357,9 +402,9 @@ function triggerQuickWhatsApp() {
 function triggerQuickEmail() {
   const cat = document.getElementById('quickCat')?.value || 'General';
   const qty = document.getElementById('quickQty')?.value || '500';
-  const subject = encodeURIComponent(`Inquiry for ${cat} - Avis Printers`);
-  const body = encodeURIComponent(`Hello Avis Printers,\n\nI am requesting a price estimate for ${qty} units of ${cat}.\n\nPlease share details and turnaround time.\n\nThank you!`);
-  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+  const subject = `Inquiry for ${cat} - Avis Printers`;
+  const body = `Hello Avis Printers,\n\nI am requesting a price estimate for ${qty} units of ${cat}.\n\nPlease share details and turnaround time.\n\nThank you!`;
+  openEmailModal(subject, body);
 }
 
 function inquireCategory(catName) {
@@ -368,9 +413,9 @@ function inquireCategory(catName) {
 }
 
 function inquireCategoryEmail(catName) {
-  const subject = encodeURIComponent(`Category Inquiry: ${catName} - Avis Printers`);
-  const body = encodeURIComponent(`Hello Avis Printers,\n\nI would like to inquire about your "${catName}" services.\n\nPlease share your catalog, pricing, and turnaround time.\n\nThank you!`);
-  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+  const subject = `Category Inquiry: ${catName} - Avis Printers`;
+  const body = `Hello Avis Printers,\n\nI would like to inquire about your "${catName}" services.\n\nPlease share your catalog, pricing, and turnaround time.\n\nThank you!`;
+  openEmailModal(subject, body);
 }
 
 function orderSimilar(projectTitle) {
@@ -379,9 +424,9 @@ function orderSimilar(projectTitle) {
 }
 
 function orderSimilarEmail(projectTitle) {
-  const subject = encodeURIComponent(`Project Inquiry: ${projectTitle}`);
-  const body = encodeURIComponent(`Hi Avis Printers,\n\nI saw your past project execution "${projectTitle}" on your website.\n\nI would like to order a similar print execution. Please contact me with pricing.\n\nThank you!`);
-  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+  const subject = `Project Inquiry: ${projectTitle}`;
+  const body = `Hi Avis Printers,\n\nI saw your past project execution "${projectTitle}" on your website.\n\nI would like to order a similar print execution. Please contact me with pricing.\n\nThank you!`;
+  openEmailModal(subject, body);
 }
 
 function handleLeadSubmit(e) {
@@ -423,8 +468,8 @@ function handleEmailLeadSubmit(e) {
   const date = document.getElementById('leadDate')?.value || 'ASAP';
   const desc = document.getElementById('leadDesc')?.value || '';
 
-  const subject = encodeURIComponent(`Official Quote Request: ${category} - ${name}`);
-  const body = encodeURIComponent(`OFFICIAL INQUIRY - AVIS PRINTERS
+  const subject = `Official Quote Request: ${category} - ${name}`;
+  const body = `OFFICIAL INQUIRY - AVIS PRINTERS
 ---------------------------------------
 Name & Company: ${name}
 Phone No: ${phone}
@@ -435,9 +480,9 @@ Designing / Copywriting: ${design}
 Required Date: ${date}
 ---------------------------------------
 Description:
-${desc || 'Standard specifications requested.'}`);
+${desc || 'Standard specifications requested.'}`;
 
-  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+  openEmailModal(subject, body);
 }
 
 // Initial Setup

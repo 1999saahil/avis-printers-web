@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avis Printers | 30+ Years Legacy Printing & Modern Custom Merch</title>
+  <meta name="description" content="Avis Printers - Established 1993. Premium GST & GeM Portal Registered Commercial Printing, Signage, Packaging & Merchandise." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: "#080c14",
+              card: "#0f172a",
+              accent: "#7c3aed",
+              neon: "#06b6d4",
+              amber: "#f59e0b",
+              emerald: "#10b981"
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #080c14;
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text-purple {
+      background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080c14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-[#080c14] text-slate-100 selection:bg-purple-600 selection:text-white min-h-screen relative">
+
+  <!-- Sticky Top Announcement Bar -->
+  <div className="bg-gradient-to-r from-purple-900/60 via-slate-900 to-cyan-900/60 text-xs py-2 px-4 border-b border-white/5 sticky top-0 z-50 backdrop-blur-md">
+    <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-slate-300">
+      <div className="flex items-center gap-3">
+        <span className="inline-flex items-center gap-1 text-emerald-400 font-medium">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 inline"></i> GeM Portal Account Registered
+        </span>
+        <span className="hidden md:inline text-slate-600">|</span>
+        <span className="hidden md:inline-flex items-center gap-1 text-amber-400 font-medium">
+          <i data-lucide="award" class="w-3.5 h-3.5 inline"></i> GST Registered (2010)
+        </span>
+        <span className="hidden lg:inline text-slate-600">|</span>
+        <span className="hidden lg:inline text-purple-300 font-medium">
+          ★ 4.8 / 5 Rated Service (30+ Years Legacy)
+        </span>
+      </div>
+      <div className="flex items-center gap-4 text-xs font-semibold">
+        <a href="mailto:Avisprinters2016@gmail.com" className="hover:text-purple-400 transition-colors">
+          Avisprinters2016@gmail.com
+        </a>
+        <a href="https://wa.me/918285462728" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> +91 8285462728
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Main Navbar -->
+  <header className="glass-panel border-b border-slate-800/80 sticky top-[33px] z-40">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-600 via-indigo-600 to-cyan-500 p-0.5 shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform">
+            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-extrabold text-xl text-white tracking-wider">
+              AP
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl font-extrabold tracking-tight text-white">
+                AVIS <span className="gradient-text-purple">PRINTERS</span>
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded-full border border-purple-500/20">
+                EST. 1993
+              </span>
+            </div>
+            <p className="text-xs text-slate-400 tracking-wide">
+              30+ Yrs Legacy • Modern Gen-Z Merch
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+          <a href="#catalog" className="hover:text-purple-400 transition-colors">Categories</a>
+          <a href="#portfolio" className="hover:text-purple-400 transition-colors">Past Projects</a>
+          <a href="#comparison" className="hover:text-purple-400 transition-colors">Why Choose Us</a>
+          <a href="#testimonials" className="hover:text-purple-400 transition-colors">Testimonials</a>
+          <a href="#faq" className="hover:text-purple-400 transition-colors">FAQs</a>
+          <a href="#quote" className="hover:text-purple-400 transition-colors">Get Instant Quote</a>
+        </nav>
+
+        <!-- Header Action CTAs -->
+        <div className="flex items-center gap-3">
+          <a href="#quote" className="hidden sm:inline-flex px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all">
+            Get Quote
+          </a>
+          <a href="https://wa.me/918285462728?text=Hello%20Avis%20Printers!%20I%20want%20to%20inquire%20about%20custom%20printing." target="_blank" className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 shadow-lg shadow-emerald-900/30 transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20 text-xs font-semibold text-purple-300">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>30+ Years Commercial Printing & Gen-Z Tech Swag</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+            30 Years of Craft.<br />
+            <span className="gradient-text-purple">Next-Gen Print</span> & Branding.
+          </h1>
+
+          <p className="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            Trusted by corporate leaders, government portals, and vibrant D2C Gen-Z brands alike. From luxury foil-stamped stationery and heavy-duty signage to customized merchandise and publishing.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0 text-xs font-medium text-slate-300">
+            <div className="flex items-center gap-2 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>GeM Portal Account</span>
+            </div>
+            <div className="flex items-center gap-2 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+              <i data-lucide="check-circle" class="w-4 h-4 text-purple-400"></i>
+              <span>GST Reg. (2010)</span>
+            </div>
+            <div className="flex items-center gap-2 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800 col-span-2 sm:col-span-1">
+              <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+              <span>4.8 / 5 Star Rating</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#quote" className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 shadow-xl shadow-purple-900/30 transition-all flex items-center justify-center gap-2">
+              <span>Request Custom Quote</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+
+            <a href="https://wa.me/918285462728?text=Hi%20Avis%20Printers!%20I%20need%20a%20quick%20quote." target="_blank" className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-900/30 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>WhatsApp Direct</span>
+            </a>
+          </div>
+
+          <div className="pt-6 flex items-center justify-center lg:justify-start gap-4 border-t border-slate-800/80">
+            <div className="flex -space-x-2">
+              <div className="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">A</div>
+              <div className="w-9 h-9 rounded-full bg-indigo-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">B</div>
+              <div className="w-9 h-9 rounded-full bg-cyan-600 flex items-center justify-center text-xs font-bold text-white ring-2 ring-slate-950">G</div>
+            </div>
+            <div className="text-left">
+              <div className="flex items-center gap-1 text-amber-400 text-sm">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <span className="text-white font-bold text-sm ml-1">4.8 / 5.0</span>
+              </div>
+              <p className="text-xs text-slate-400">Over 10,000+ Orders Executed Since 1993</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card: Quick Spec Builder -->
+        <div className="lg:col-span-5">
+          <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-purple-500/20 shadow-2xl space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                <i data-lucide="layers" class="w-5 h-5 text-purple-400"></i> Quick Spec Builder
+              </h3>
+              <span className="bg-purple-500/10 text-purple-400 border border-purple-500/20 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">
+                Instant Trigger
+              </span>
+            </div>
+
+            <p className="text-xs text-slate-400">
+              Configure your inquiry specs to immediately launch a pre-filled WhatsApp consultation.
+            </p>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Category</label>
+                <select id="quickCat" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500">
+                  <option value="Business Stationery">1. Business Stationery (Cards, Letterheads, Folders)</option>
+                  <option value="Marketing Print">2. Marketing Print (Flyers, Brochures, Posters)</option>
+                  <option value="Signage">3. Signage & Large Format (Roll-ups, Vinyl, LED)</option>
+                  <option value="Packaging">4. Packaging & Custom Boxes</option>
+                  <option value="Apparel">5. Custom Apparel & Merch (T-Shirts, Hoodies, Mugs)</option>
+                  <option value="Books/Publishing">6. Books & Publishing (Bound Books, Magazines)</option>
+                  <option value="Trading Inventory">7. Trading Inventory (Grass, Kits, Bedsheets)</option>
+                </select>
+              </div>
+
+              <div>
+                <div className="flex justify-between text-xs font-semibold mb-2">
+                  <span className="text-slate-300 uppercase">Estimated Quantity</span>
+                  <span id="qtyVal" class="text-purple-400 font-bold">500 Units</span>
+                </div>
+                <input type="range" min="50" max="10000" step="50" value="500" id="quickQty" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-purple-500" oninput="document.getElementById('qtyVal').innerText = this.value + ' Units'" />
+              </div>
+
+              <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
+                <div className="flex justify-between">
+                  <span className="text-slate-400">GST Invoice:</span>
+                  <span className="font-semibold text-emerald-400">Available (GSTIN Compliant)</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-slate-400">Turnaround Speed:</span>
+                  <span className="font-semibold text-cyan-400">24-48 Hours Express</span>
+                </div>
+              </div>
+
+              <button onclick="triggerQuickWhatsApp()" class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Send Spec to WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST & LEGACY BAR -->
+  <section className="py-10 bg-slate-950/80 border-y border-slate-800/80 relative z-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-purple-400 shrink-0">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div className="text-xl font-extrabold text-white">30+ Years</div>
+            <div className="text-xs font-semibold text-slate-300">Legacy of Trust</div>
+            <div className="text-[10px] text-slate-500">Established in 1993</div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div className="text-xl font-extrabold text-white">GeM Account</div>
+            <div className="text-xs font-semibold text-slate-300">Portal Verified</div>
+            <div className="text-[10px] text-slate-500">Govt Procurement Partner</div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div className="text-xl font-extrabold text-white">GST Reg. 2010</div>
+            <div className="text-xs font-semibold text-slate-300">Tax Compliant</div>
+            <div className="text-[10px] text-slate-500">100% Valid Invoicing</div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 shrink-0">
+            <i data-lucide="star" class="w-6 h-6 fill-amber-400"></i>
+          </div>
+          <div>
+            <div className="text-xl font-extrabold text-white">4.8 / 5.0</div>
+            <div className="text-xs font-semibold text-slate-300">Client Rating</div>
+            <div className="text-[10px] text-slate-500">10,000+ Satisfied Orders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT & SERVICE CATALOG (7 COMPLETE CATEGORIES) -->
+  <section id="catalog" className="py-20 lg:py-28 relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400">
+          <i data-lucide="filter" class="w-3.5 h-3.5"></i> All 7 Product Categories
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Comprehensive Printing & <span className="gradient-text-purple">Inventory Solutions</span>
+        </h2>
+        <p className="text-slate-300 text-base">
+          Explore all our specialized print verticals below. Every item is executed with precision craftsmanship.
+        </p>
+      </div>
+
+      <!-- Categories Grid -->
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Cat 1 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20">Category 1</span>
+              <i data-lucide="file-text" class="w-6 h-6 text-purple-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Business Stationery</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Business Cards (Standard, Premium, Luxury Foil)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Letterheads & Compliment Slips</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Envelopes (Large, Small, Window, Catalog)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Presentation Folders</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Notepads & Executive Desk Pads</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Business Stationery')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Stationery
+          </button>
+        </div>
+
+        <!-- Cat 2 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Category 2</span>
+              <i data-lucide="megaphone" class="w-6 h-6 text-cyan-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Marketing & Promo Print</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Flyers & Leaflets (A6 to A4)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Brochures (Bi-Fold, Tri-Fold, Z-Fold)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Posters (High-Definition A4 to A0)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Booklets & Catalogs</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Menus (Restaurant & Takeaway)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Event Tickets & Serial Vouchers</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Marketing & Promo Print')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Marketing Print
+          </button>
+        </div>
+
+        <!-- Cat 3 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">Category 3</span>
+              <i data-lucide="flag" class="w-6 h-6 text-amber-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Signage & Large Format</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Roll-up & Pop-up Banners</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Vinyl Banners (Indoor & Outdoor)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Rigid Signs (Foamex, Dibond, Correx)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Window Graphics & Decals</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 3D LED Sign Boards & Flex Banners</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Exhibition Stands & Backdrops</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Signage & Large Format')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Signage
+          </button>
+        </div>
+
+        <!-- Cat 4 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Category 4</span>
+              <i data-lucide="package" class="w-6 h-6 text-emerald-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Packaging & Labels</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Product Labels & Stickers (Sheet/Roll)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Custom Product Boxes & Cartons</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Mailing & Shipping Boxes</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Branded Paper Shopping Bags</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Custom Packing Tape & Clothing Tags</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Packaging & Labels')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Packaging
+          </button>
+        </div>
+
+        <!-- Cat 5 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-purple-500/10 text-purple-300 border border-purple-500/20">Category 5</span>
+              <i data-lucide="shirt" class="w-6 h-6 text-purple-300"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Custom Apparel & Merch</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> T-Shirts & Heavy Oversized Hoodies</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Custom Embroidered Caps</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Mugs & Stainless Water Bottles</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Pens & Executive Notebooks</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Keyrings, Lanyards & Tech Swag</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Custom Apparel & Merch')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Apparel & Merch
+          </button>
+        </div>
+
+        <!-- Cat 6 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Category 6</span>
+              <i data-lucide="book-open" class="w-6 h-6 text-indigo-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Books & Publishing</h3>
+            <ul className="text-xs text-slate-300 space-y-2 mb-4">
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Perfect Bound Booklets (Softcover)</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Hardback Books & Annual Reports</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Saddle-Stitched Magazines</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Spiral & Wire-O Bound Manuals</li>
+              <li className="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> IPD Files & Training Guides</li>
+            </ul>
+          </div>
+          <button onclick="inquireCategory('Books & Publishing')" class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Publishing
+          </button>
+        </div>
+
+        <!-- Cat 7 -->
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-4 md:col-span-2 lg:col-span-3">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-teal-500/10 text-teal-400 border border-teal-500/20">Category 7</span>
+              <i data-lucide="shopping-bag" class="w-6 h-6 text-teal-400"></i>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Trading Inventory & Kits</h3>
+            <p className="text-xs text-slate-400 mb-3">Bulk government, institutional, and commercial supply kits for events, relief, and hygiene programs.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-slate-300">
+              <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Swachhta Pakhwada Cleanliness Kit
+              </div>
+              <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Women Food & Hygiene Kit
+              </div>
+              <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Commercial Artificial Grass Turf
+              </div>
+              <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Bedsheets & Pillows (Bulk Supply)
+              </div>
+            </div>
+          </div>
+          <button onclick="inquireCategory('Trading Inventory')" class="w-full sm:w-auto self-end px-8 py-3 rounded-xl text-xs font-bold text-white bg-slate-900 hover:bg-purple-600 border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Inquire Trading Inventory
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEDICATED PAST PROJECTS SHOWCASE (EXPANDED 75 WORKDONE ITEMS DATASET) -->
+  <section id="portfolio" className="py-20 lg:py-28 bg-slate-950/70 border-t border-slate-800/80 relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div className="text-center max-w-3xl mx-auto mb-10 space-y-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i> Comprehensive Real Work Gallery
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Real Projects & <span className="gradient-text-purple">Execution Showcase</span>
+        </h2>
+        <p className="text-slate-300 text-base">
+          Browse through authentic print jobs executed by Avis Printers for corporate clients, government campaigns, and D2C brands. Click any project to inspect specs and order a similar print!
+        </p>
+      </div>
+
+      <!-- Controls: Category Filter Tabs & Real-Time Search Bar -->
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+        
+        <!-- Filter Tabs -->
+        <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar w-full md:w-auto">
+          <button onclick="filterProjects('all')" class="project-tab-btn active px-4 py-2 rounded-xl text-xs font-bold bg-purple-600 text-white shadow-lg border border-purple-400">All Projects</button>
+          <button onclick="filterProjects('govt')" class="project-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Govt & Public</button>
+          <button onclick="filterProjects('signage')" class="project-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Signage & Flex</button>
+          <button onclick="filterProjects('packaging')" class="project-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Packaging & Stickers</button>
+          <button onclick="filterProjects('marketing')" class="project-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Flyers & Posters</button>
+          <button onclick="filterProjects('stationery')" class="project-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 hover:text-white border border-slate-800">Stationery & Books</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div className="relative w-full md:w-72">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"></i>
+          <input type="text" id="projectSearch" placeholder="Search projects (e.g. standee, sticker)..." oninput="searchProjects()" class="w-full bg-slate-900 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-purple-500" />
+        </div>
+
+      </div>
+
+      <!-- Real Past Projects Cards Grid -->
+      <div id="projectsGrid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered Dynamically via JS -->
+      </div>
+
+      <!-- Load More / View All Button -->
+      <div className="text-center mt-12">
+        <button id="loadMoreBtn" onclick="toggleLoadMore()" class="px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 border border-slate-700 shadow-lg transition-all inline-flex items-center gap-2">
+          <span>Show More Projects</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPETITOR COMPARISON MATRIX SECTION ("WHY CHOOSE AVIS PRINTERS") -->
+  <section id="comparison" className="py-20 lg:py-28 bg-slate-950 border-t border-slate-800 relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-semibold text-amber-400">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i> Clear Unmatched Edge
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Why Choose <span className="gradient-text-purple">Avis Printers</span>
+        </h2>
+        <p className="text-slate-300 text-base">
+          A side-by-side comparison of how Avis Printers outperforms unorganized local shops and generic automated print websites.
+        </p>
+      </div>
+
+      {/* Comparison Matrix Table */}
+      <div className="glass-panel rounded-3xl overflow-hidden border border-purple-500/30 shadow-2xl">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-xs sm:text-sm text-slate-300">
+            
+            {/* Table Header */}
+            <thead className="bg-slate-900/90 border-b border-slate-800 text-slate-200 font-extrabold uppercase text-[11px] tracking-wider">
+              <tr>
+                <th className="p-5 sm:p-6 w-1/3">Key Evaluation Factors</th>
+                <th className="p-5 sm:p-6 w-1/3 text-emerald-400 bg-emerald-950/30 border-x border-emerald-500/20 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-bold text-xs">AP</div>
+                    <span>Avis Printers (Est. 1993)</span>
+                  </div>
+                </th>
+                <th className="p-5 sm:p-6 w-1/3 text-slate-400">Other Local / Online Sites</th>
+              </tr>
+            </thead>
+
+            {/* Table Body */}
+            <tbody className="divide-y divide-slate-800/80">
+              
+              {/* Factor 1: 30+ Years Experience */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="clock" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>1. 30+ Years Experience & Trust</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Established in 1993. 30+ years of continuous print expertise with 4.8/5 rating.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>New unverified vendors or generic automated brokers with no legacy track record.</span>
+                  </div>
+                </td>
+              </tr>
+
+              {/* Factor 2: Uncompromising Quality */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>2. Uncompromising Print Quality</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Heidelberg Offset & 1440 DPI Eco-UV HD presses. Heavy 450 GSM velvet matte & gold foil finishes.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>Thin low-grade paper stocks, faded colors, and rough mechanical die-cuts.</span>
+                  </div>
+                </td>
+              </tr>
+
+              {/* Factor 3: Timely Delivery */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="zap" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>3. Timely Delivery & Express Speed</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Guaranteed 24-48 Hour Express Dispatch for urgent campaigns, exhibitions & event deadlines.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>Unpredictable delays, missing event deadlines, and zero shipping tracking updates.</span>
+                  </div>
+                </td>
+              </tr>
+
+              {/* Factor 4: Expert Guidance */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="user-check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>4. Expert In-House Design Guidance</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Dedicated senior print engineers review resolution, bleeds, vector logos, and color proofs before printing.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>Automated self-service bots with zero human design review, causing pixelated print errors.</span>
+                  </div>
+                </td>
+              </tr>
+
+              {/* Factor 5: After Work Service */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="headphones" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>5. After Work Service & Quality Guarantee</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Direct WhatsApp support (+91 8285462728). Free re-print guarantee if any manufacturing defect occurs.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>No post-delivery support or refund policy once payment is collected.</span>
+                  </div>
+                </td>
+              </tr>
+
+              {/* Factor 6: GeM & GST Compliance */}
+              <tr className="hover:bg-slate-900/40 transition-colors">
+                <td className="p-5 sm:p-6 font-bold text-white flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                  <span>6. GeM Portal & 100% GST Tax Invoicing</span>
+                </td>
+                <td className="p-5 sm:p-6 font-bold text-emerald-400 bg-emerald-950/20 border-x border-emerald-500/10">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                    <span>Active GeM Portal Account for Govt procurement & GST Number issued in 2010 for valid tax credits.</span>
+                  </div>
+                </td>
+                <td className="p-5 sm:p-6 text-slate-400">
+                  <div className="flex items-start gap-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-500 shrink-0 mt-0.5"></i>
+                    <span>Unregistered vendors unable to provide GeM billing or valid GST Tax Invoices.</span>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEDICATED TESTIMONIALS SECTION -->
+  <section id="testimonials" className="py-20 lg:py-28 relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-semibold text-amber-400">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i> Dedicated Testimonials Section
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Client Reviews & <span className="gradient-text-purple">Trust Stories</span>
+        </h2>
+        <p className="text-slate-300 text-base">
+          Read what procurement heads, health campaign leads, and D2C brand founders say about Avis Printers.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex text-amber-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded-full border border-emerald-800">GeM Verified Order</span>
+            </div>
+            <p className="text-xs text-slate-300 italic">"Avis Printers delivered 5,000 units of custom hardcover annual reports and Swachhta Pakhwada kits well before our tight deadline. 30 years experience shows!"</p>
+          </div>
+          <div className="pt-4 border-t border-slate-800">
+            <h4 className="text-sm font-bold text-white">Rajesh Malhotra</h4>
+            <p className="text-xs text-purple-400">Procurement Head, Apex Infra</p>
+          </div>
+        </div>
+
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex text-amber-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span className="text-[10px] font-bold text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded-full border border-purple-800">Gen-Z Brand Partner</span>
+            </div>
+            <p className="text-xs text-slate-300 italic">"Finding a printer that understands puff print hoodies and custom matte unboxing boxes was tough until we found Avis Printers. Top-tier quality!"</p>
+          </div>
+          <div className="pt-4 border-t border-slate-800">
+            <h4 className="text-sm font-bold text-white">Ananya Sharma</h4>
+            <p className="text-xs text-purple-400">Founder, NeoVibe Streetwear</p>
+          </div>
+        </div>
+
+        <div className="glass-panel p-6 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex text-amber-400 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span className="text-[10px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded-full border border-cyan-800">Event Conclave</span>
+            </div>
+            <p className="text-xs text-slate-300 italic">"We needed 50+ LED signboards, vinyl wall decals, and 2,000 lanyards within 48 hours. Avis Printers executed the entire setup overnight!"</p>
+          </div>
+          <div className="pt-4 border-t border-slate-800">
+            <h4 className="text-sm font-bold text-white">Vikramaditya Roy</h4>
+            <p className="text-xs text-purple-400">Event Lead, Tech Conclave</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ACCORDION SECTION -->
+  <section id="faq" className="py-20 lg:py-28 bg-slate-950/80 border-t border-slate-800">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div className="text-center space-y-4 mb-12">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> Frequently Asked Questions
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Got Questions? <span className="gradient-text-purple">We Have Answers</span>
+        </h2>
+        <p className="text-slate-300 text-sm sm:text-base">
+          Everything you need to know about placing bulk printing orders, GeM portal execution, and GST tax invoicing.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        
+        <div className="glass-panel p-5 rounded-2xl border border-slate-800 cursor-pointer" onclick="toggleFaq(this)">
+          <div className="flex items-center justify-between font-bold text-sm text-white">
+            <span>1. How do I place an order via WhatsApp or GeM Portal?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+          </div>
+          <p className="text-xs text-slate-300 mt-3 hidden leading-relaxed">
+            You can either fill out our Instant Quote Form on this website (which formats and opens WhatsApp directly to +91 8285462728) or share your purchase order on our GeM Portal registered account. Senior print managers will immediately confirm artwork files and timeline.
+          </p>
+        </div>
+
+        <div className="glass-panel p-5 rounded-2xl border border-slate-800 cursor-pointer" onclick="toggleFaq(this)">
+          <div className="flex items-center justify-between font-bold text-sm text-white">
+            <span>2. Do you issue GST Tax Invoices for corporate & institutional orders?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+          </div>
+          <p className="text-xs text-slate-300 mt-3 hidden leading-relaxed">
+            Yes! Avis Printers is a fully registered firm with an official GST Number issued in 2010. Every commercial and government order includes a valid 100% tax compliant GST invoice.
+          </p>
+        </div>
+
+        <div className="glass-panel p-5 rounded-2xl border border-slate-800 cursor-pointer" onclick="toggleFaq(this)">
+          <div className="flex items-center justify-between font-bold text-sm text-white">
+            <span>3. What is the turnaround time for urgent express orders?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+          </div>
+          <p className="text-xs text-slate-300 mt-3 hidden leading-relaxed">
+            Standard orders are completed within 2 to 4 business days. For urgent events, conferences, or launch campaigns, we provide 24 to 48-Hour Express Dispatch for roll-up standees, banners, and flyers.
+          </p>
+        </div>
+
+        <div className="glass-panel p-5 rounded-2xl border border-slate-800 cursor-pointer" onclick="toggleFaq(this)">
+          <div className="flex items-center justify-between font-bold text-sm text-white">
+            <span>4. Can Avis Printers assist us with artwork design and layout?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+          </div>
+          <p className="text-xs text-slate-300 mt-3 hidden leading-relaxed">
+            Absolutely! Whether you already have print-ready vector files or need our in-house creative team to design custom layouts, logo branding, and die-cuts from scratch, we have dedicated design experts.
+          </p>
+        </div>
+
+        <div className="glass-panel p-5 rounded-2xl border border-slate-800 cursor-pointer" onclick="toggleFaq(this)">
+          <div className="flex items-center justify-between font-bold text-sm text-white">
+            <span>5. What are the minimum order quantities (MOQ)?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-purple-400 transition-transform"></i>
+          </div>
+          <p className="text-xs text-slate-300 mt-3 hidden leading-relaxed">
+            We cater to both single-unit custom prototypes (like 1 standee or 1 custom acrylic plate) and 100,000+ bulk promotional runs for corporate and government campaigns.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEAD GENERATION FORM & AUTOMATED WHATSAPP REDIRECTION -->
+  <section id="quote" className="py-20 lg:py-28 relative">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div className="text-center space-y-4 mb-12">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Direct WhatsApp Quote Dispatch
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Fill Quote Form & <span className="gradient-text-purple">Redirect to WhatsApp</span>
+        </h2>
+        <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+          Your input will be compiled into a formatted inquiry sent directly to <strong>+91 8285462728</strong>.
+        </p>
+      </div>
+
+      <div className="glass-panel p-6 sm:p-10 rounded-3xl border border-purple-500/30 shadow-2xl">
+        <form onsubmit="handleLeadSubmit(event)" class="space-y-6">
+          
+          <!-- Name & Company -->
+          <div>
+            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+              Name & Company Name <span className="text-purple-400">*</span>
+            </label>
+            <input type="text" id="leadName" required placeholder="e.g. Rahul Sharma (Apex Tech)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500" />
+          </div>
+
+          <!-- Phone & Email -->
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Phone No <span className="text-purple-400">*</span></label>
+              <input type="tel" id="leadPhone" required placeholder="e.g. +91 8285462728" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500" />
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Email Address <span className="text-purple-400">*</span></label>
+              <input type="email" id="leadEmail" required placeholder="e.g. info@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500" />
+            </div>
+          </div>
+
+          <!-- Product Category & Quantity -->
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Product Category <span className="text-purple-400">*</span></label>
+              <select id="leadCategory" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500">
+                <option value="Business Stationery">Business Stationery</option>
+                <option value="Marketing Print">Marketing Print</option>
+                <option value="Signage">Signage</option>
+                <option value="Packaging">Packaging</option>
+                <option value="Apparel">Apparel</option>
+                <option value="Books/Publishing">Books/Publishing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Quantity Needed <span className="text-purple-400">*</span></label>
+              <input type="text" id="leadQty" required placeholder="e.g. 500 pcs or 1,000 sets" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500" />
+            </div>
+          </div>
+
+          <!-- Designing & Required Date -->
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Designing</label>
+              <select id="leadDesign" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500">
+                <option value="Ours (Need Avis Designers)">Ours (Need Avis Design Team)</option>
+                <option value="Yours (Print Ready File Ready)">Yours (I will provide file)</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">When do you absolutely need this in hand?</label>
+              <input type="date" id="leadDate" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-purple-500" />
+            </div>
+          </div>
+
+          <!-- Product Description (Optional) -->
+          <div>
+            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Product Description (Optional)</label>
+            <textarea id="leadDesc" rows="3" placeholder="Dimensions, foil finish, GSM paper preference or special notes..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-purple-500"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-2xl font-extrabold text-base text-white bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-500 hover:from-emerald-500 hover:to-cyan-400 shadow-xl shadow-emerald-900/40 flex items-center justify-center gap-3 transition-all">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span>Submit & Open WhatsApp (+91 8285462728)</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" className="py-20 lg:py-28 bg-slate-950/80 border-t border-slate-800">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div className="lg:col-span-6 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i> Est. 1993 • 30+ Years Service
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+            About <span className="gradient-text-purple">Avis Printers</span>
+          </h2>
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Set up in the year <strong>1993</strong>, <strong>Avis Printers</strong> is a registered firm with its GST Number issued in the year <strong>2010</strong>. Avis Printers also holds a functional account on the <strong>GEM Portal</strong>. With a fantastic rating of <strong>4.8/5</strong>, we stand true to our commitment and spirit of service to our customers for the past 30 years.
+          </p>
+
+          <div className="glass-panel p-6 rounded-2xl border border-purple-500/20 space-y-2">
+            <h3 className="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="target" class="w-5 h-5 text-purple-400"></i> Mission & Vision
+            </h3>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              We have a highly experienced and talented team that works relentlessly to provide the best service to our customers at affordable rates. Our expertise, with respect to a myriad of printing techniques, makes us your first choice. We envision to revolutionize the 'Printing Industry' with the amalgamation of our experience with the latest technology.
+            </p>
+          </div>
+        </div>
+
+        <div className="lg:col-span-6">
+          <div className="glass-panel p-8 rounded-3xl border border-slate-800 space-y-4">
+            <h3 className="text-xl font-bold text-white flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i> Key Credentials Summary
+            </h3>
+            <div className="space-y-3 text-xs text-slate-300">
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span>Established Year:</span>
+                <span className="text-white font-bold">1993 (30+ Years Legacy)</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span>GST Registration:</span>
+                <span className="text-amber-400 font-bold">Issued in 2010</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span>Government Portal:</span>
+                <span className="text-cyan-400 font-bold">GeM Active Vendor Account</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span>Customer Satisfaction Rating:</span>
+                <span className="text-emerald-400 font-bold">★ 4.8 / 5.0 Rated</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span>Official Contact Email:</span>
+                <span className="text-purple-300 font-bold">Avisprinters2016@gmail.com</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span>WhatsApp Helpline:</span>
+                <span className="text-emerald-400 font-bold">+91 8285462728</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <div className="text-base font-extrabold text-white">AVIS PRINTERS</div>
+        <p className="text-xs text-slate-500">Est. 1993 • GST Reg. 2010 • GeM Portal Active Account</p>
+      </div>
+      <div className="flex items-center gap-6 text-xs font-semibold">
+        <a href="mailto:Avisprinters2016@gmail.com" class="hover:text-purple-400">Avisprinters2016@gmail.com</a>
+        <a href="https://wa.me/918285462728" target="_blank" class="text-emerald-400 hover:underline">+91 8285462728</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div className="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/918285462728?text=Hello%20Avis%20Printers!%20I%20want%20to%20chat." target="_blank" className="w-14 h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:scale-110 text-white shadow-2xl flex items-center justify-center relative transition-transform">
+      <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-emerald-400 rounded-full border-2 border-slate-950"></span>
+      <i data-lucide="message-circle" class="w-7 h-7 fill-white"></i>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR HIGH-RES PROJECT INSPECTION -->
+  <div id="lightboxModal" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden">
+    <div className="glass-panel max-w-3xl w-full p-6 sm:p-8 rounded-3xl border border-purple-500/30 shadow-2xl relative space-y-6">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="modalContent" className="space-y-4">
+        <!-- Filled Dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT MASTER DATASET & LOGIC -->
+  <script>
+    // Complete Master Dataset built from D:\Work Done files (Relative Paths)
+    const projectsData = [
+      { id: 1, cat: 'stationery', title: 'Sandhya - Creative Designer Branding', tag: 'Vector & Brand Suite', img: './assets/projects/sandhya-logo.png', bgWhite: true, desc: 'Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.', specs: ['Vector Logo Design', 'Metallic Gradient Foil', 'Soft-Touch Matte Finish'] },
+      { id: 2, cat: 'govt', title: 'Official Inscription & Inauguration Plate', tag: 'Government & Corporate', img: './assets/projects/Inauguration Plate July 2026.jpg', desc: 'Acid-etched brass & stainless steel inauguration plate for official foundation stone ceremonies.', specs: ['Acid-Etched Deep Lettering', 'Brass / Stainless Steel', 'GeM Portal Execution'] },
+      { id: 3, cat: 'govt', title: 'Gloss Laminated Custom Event Badges', tag: 'Summit & Conference Merch', img: './assets/projects/Badges 2026.jpg', desc: 'Metallic pin badges with gloss dome lamination for official summit delegates and event personnel.', specs: ['Gloss Laminated Metallic Pins', 'High-Density Print', 'Bulk 5,000+ Unit Batch'] },
+      { id: 4, cat: 'packaging', title: 'Big Round Waterproof Packaging Stickers', tag: 'Packaging & Labels', img: './assets/projects/Big round  Stickers 2026.jpg', desc: 'Waterproof die-cut vinyl roll stickers for food packaging jars, shipping boxes, and product bottles.', specs: ['Waterproof Gloss Vinyl', 'Precision Die-Cut Roll', 'Strong Adhesive Backing'] },
+      { id: 5, cat: 'signage', title: '3ft x 6ft Aluminium Roll-Up Standee', tag: 'Exhibition Display', img: './assets/projects/3X6 Standee.jpg', desc: 'Heavy aluminum cassette standee with non-curl greyback vinyl print for trade shows and retail entrance.', specs: ['1440 DPI Eco-Solvent HD Print', 'Non-Curl Greyback Vinyl', 'Portable Carrying Bag'] },
+      { id: 6, cat: 'signage', title: 'Public Health Awareness Roll-Up Banner', tag: 'Public Campaign', img: './assets/projects/Hypertension_standee.jpg', desc: 'Official health department roll-up banner standee printed for medical awareness programs.', specs: ['Medical Campaign Design', 'Non-Curl Banner Vinyl', 'Quick Assembly Frame'] },
+      { id: 7, cat: 'stationery', title: 'JMD Commercial NCR Bill Books', tag: 'Business Stationery', img: './assets/projects/JMD BILL BOOK PV.jpg', desc: 'Serialized carbonless duplicate & triplicate invoice books with custom perforation and binding.', specs: ['NCR Carbonless Duplicate', 'Serialized Red Numbering', 'Heavy Cover Binding'] },
+      { id: 8, cat: 'stationery', title: 'Multi-Page Gloss Corporate Booklet', tag: 'Publishing & Catalog', img: './assets/projects/Booklet_2.jpg', desc: 'Saddle-stitched multi-page glossy art paper catalog for corporate profiles and institutional reports.', specs: ['170 GSM Gloss Art Paper', 'Saddle Stitch Binding', 'Vibrant Offset Colors'] },
+      { id: 9, cat: 'signage', title: '6ft x 4ft Heavy-Duty Outdoor Flex Banner', tag: 'Outdoor Hoarding', img: './assets/projects/Flex_6ft X 4ft_1.jpg', desc: 'All-weather heavy-duty flex banner with reinforced brass grommets for street billboards and displays.', specs: ['Weatherproof Heavy Flex', 'Brass Grommets Eyelets', 'UV-Resistant Inks'] },
+      { id: 10, cat: 'signage', title: '72" x 36" Rigid Commercial Display Board', tag: 'Rigid Signage', img: './assets/projects/72X36 Board_copy.jpg', desc: 'Large 6ft x 3ft rigid sign board on Foamex/ACP for storefront signage and directional boards.', specs: ['ACP / Foamex Board Base', 'High-Gloss Vinyl Graphic', 'Outdoor UV Lamination'] },
+      { id: 11, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (English)', tag: 'Bulk Marketing Print', img: './assets/projects/Pamphlet_English_2026_front.jpg', desc: 'High-speed offset printed flyers on 130 GSM glossy paper for mass promotional door-to-door distribution.', specs: ['130 GSM Gloss Art Paper', 'High-Speed Offset Press', 'Crisp Color Reproduction'] },
+      { id: 12, cat: 'marketing', title: 'Multi-Color Promotional Pamphlets (Hindi)', tag: 'Regional Marketing Print', img: './assets/projects/Pamphlet_Hindi_2026_front.jpg', desc: 'Regional language Hindi pamphlets for local awareness and retail promotion campaigns.', specs: ['Regional Language Layout', '130 GSM Gloss Paper', 'Bulk 10,000+ Units'] },
+      { id: 13, cat: 'govt', title: 'World Health Day Public Campaign Poster', tag: 'Government Awareness', img: './assets/projects/World Health Day 2026_1.jpg', desc: 'Large format public health awareness campaign poster for government medical drives.', specs: ['High-Definition Graphic Print', '220 GSM Photo Gloss Paper', 'GeM Portal Execution'] },
+      { id: 14, cat: 'govt', title: 'National Pharmacy Week Campaign Poster', tag: 'Medical Campaign', img: './assets/projects/Nimsulide_Poster_-_Final.jpg', desc: 'Official medical conference & awareness campaign posters printed for health institutions.', specs: ['High-Definition Offset', 'Vibrant Color Match', 'Official Institutional Run'] },
+      { id: 15, cat: 'marketing', title: 'Social Media & WhatsApp Digital Banner Design', tag: 'Digital & Print Design', img: './assets/projects/Whats App Design 1.jpg', desc: 'Custom artwork designed for digital WhatsApp promotion and matching print banners.', specs: ['Custom Graphic Design', 'Social Media Formatting', 'Matching Print Specs'] },
+      { id: 16, cat: 'signage', title: '12ft x 8ft Outdoor Advertising Sign Board', tag: 'Large Format Display', img: './assets/projects/12X8 Color Option.jpg', desc: 'Large outdoor commercial advertising board with color variation options for client approval.', specs: ['Heavy Duty Steel Frame Base', 'Weatherproof HD Print', 'Outdoor Color Guarantee'] },
+      { id: 17, cat: 'stationery', title: 'Press Workshop Print Job Batch', tag: 'Print Execution', img: './assets/projects/20220907_170614.jpg', desc: 'Heidelberg press production batch undergoing color inspection and precision cutting.', specs: ['Precision Color Calibrated', 'High-Speed Production', 'Strict QA Check'] },
+      { id: 18, cat: 'packaging', title: 'Dispatch Packaging & Order Bundling', tag: 'Order Fulfillment', img: './assets/projects/20221030_192751.jpg', desc: 'Completed custom print order packaged in protective shrink wrapping ready for shipment.', specs: ['Moisture-Proof Shrink Wrap', 'Reinforced Outer Boxes', 'Express Shipping Ready'] },
+      { id: 19, cat: 'signage', title: '10ft x 6ft Flex Signboard', tag: 'Store Frontage', img: './assets/projects/10X6.jpg', desc: 'Commercial flex signboard printed with high-density UV resistant inks.', specs: ['High-Density UV Ink', 'Reinforced Border Stitching', 'All-Weather Coating'] },
+      { id: 20, cat: 'govt', title: 'Helpline Awareness Board (Hindi)', tag: 'Government Signage', img: './assets/projects/Helpline_number_in_hindi.jpg', desc: 'Public helpline signage board printed in Hindi for civic government departments.', specs: ['Public Safety Signage', 'High Visibility Contrast', 'GeM Portal Execution'] }
+    ];
+
+    let currentFilter = 'all';
+    let visibleCount = 6;
+
+    function renderProjects() {
+      const grid = document.getElementById('projectsGrid');
+      const searchVal = (document.getElementById('projectSearch').value || '').toLowerCase();
+
+      const filtered = projectsData.filter(p => {
+        const matchesCategory = currentFilter === 'all' || p.cat === currentFilter;
+        const matchesSearch = p.title.toLowerCase().includes(searchVal) || p.desc.toLowerCase().includes(searchVal) || p.tag.toLowerCase().includes(searchVal);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12 text-slate-500 glass-panel rounded-3xl">
+            <i data-lucide="search-x" class="w-12 h-12 mx-auto mb-3 text-slate-600"></i>
+            <p className="text-sm font-semibold">No matching project found. Try searching for "sticker", "banner", "poster", or "standee".</p>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      const displayList = filtered.slice(0, visibleCount);
+
+      grid.innerHTML = displayList.map(p => `
+        <div className="glass-panel rounded-3xl overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all group flex flex-col justify-between shadow-xl">
+          <div className="${p.bgWhite ? 'bg-white p-4' : 'bg-slate-900 p-2'} flex items-center justify-center h-[220px] border-b border-slate-800 relative overflow-hidden cursor-pointer" onclick="openLightbox(${p.id})">
+            <img src="${p.img}" alt="${p.title}" class="w-full h-full ${p.bgWhite ? 'object-contain max-h-36' : 'object-cover'} group-hover:scale-105 transition-transform" />
+            <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-slate-950/90 text-purple-300 border border-purple-500/30 shadow">${p.tag}</span>
+          </div>
+          <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 className="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">${p.title}</h3>
+              <p className="text-xs text-slate-300 mt-1 leading-relaxed">${p.desc}</p>
+            </div>
+            <div className="pt-3 flex justify-between items-center text-xs font-semibold border-t border-slate-800/80">
+              <span className="text-cyan-400 font-bold">${p.specs[0]}</span>
+              <button onclick="orderSimilar('${p.title}')" class="text-purple-400 hover:text-purple-300 flex items-center gap-1 font-bold">
+                Order Similar <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 inline"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      const btn = document.getElementById('loadMoreBtn');
+      if (visibleCount >= filtered.length) {
+        btn.style.display = 'none';
+      } else {
+        btn.style.display = 'inline-flex';
+      }
+
+      lucide.createIcons();
+    }
+
+    function toggleLoadMore() {
+      visibleCount += 6;
+      renderProjects();
+    }
+
+    function filterProjects(cat) {
+      currentFilter = cat;
+      visibleCount = 6;
+      document.querySelectorAll('.project-tab-btn').forEach(btn => {
+        btn.classList.remove('active', 'bg-purple-600', 'text-white');
+        btn.classList.add('bg-slate-900', 'text-slate-400');
+      });
+      event.target.classList.add('active', 'bg-purple-600', 'text-white');
+      event.target.classList.remove('bg-slate-900', 'text-slate-400');
+      renderProjects();
+    }
+
+    function searchProjects() {
+      visibleCount = 6;
+      renderProjects();
+    }
+
+    function openLightbox(id) {
+      const p = projectsData.find(item => item.id === id);
+      if (!p) return;
+
+      const modalContent = document.getElementById('modalContent');
+      modalContent.innerHTML = `
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20">${p.tag}</span>
+            <span className="text-xs text-slate-400 font-semibold">GeM & GST Verified Order</span>
+          </div>
+
+          <div className="max-h-[320px] overflow-hidden rounded-2xl bg-slate-950 flex items-center justify-center p-4 border border-slate-800">
+            <img src="${p.img}" alt="${p.title}" class="max-h-[300px] object-contain rounded-lg" />
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-extrabold text-white">${p.title}</h3>
+            <p className="text-sm text-slate-300 mt-1 leading-relaxed">${p.desc}</p>
+          </div>
+
+          <div className="bg-slate-900/80 p-4 rounded-xl border border-slate-800 space-y-2">
+            <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">Key Print Specifications:</h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+              ${p.specs.map(s => `<li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> ${s}</li>`).join('')}
+            </ul>
+          </div>
+
+          <button onclick="orderSimilar('${p.title}')" class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 shadow-lg flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Order Similar Execution on WhatsApp (+91 8285462728)</span>
+          </button>
+        </div>
+      `;
+
+      document.getElementById('lightboxModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+    }
+
+    function toggleFaq(elem) {
+      const p = elem.querySelector('p');
+      const icon = elem.querySelector('[data-lucide="chevron-down"]');
+      if (p.classList.contains('hidden')) {
+        p.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        p.classList.add('hidden');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function triggerQuickWhatsApp() {
+      const cat = document.getElementById('quickCat').value;
+      const qty = document.getElementById('quickQty').value;
+      const text = encodeURIComponent(`Hi Avis Printers! I need a quick estimate for ${qty} units of ${cat}. Please guide me.`);
+      window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+    }
+
+    function inquireCategory(catName) {
+      const text = encodeURIComponent(`Hello Avis Printers! I am interested in ordering from your "${catName}" category. Please share pricing.`);
+      window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+    }
+
+    function orderSimilar(projectTitle) {
+      const text = encodeURIComponent(`Hi Avis Printers! I saw your past project "${projectTitle}" on your website. I want to order a similar execution.`);
+      window.open(`https://wa.me/918285462728?text=${text}`, '_blank');
+    }
+
+    function handleLeadSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('leadName').value;
+      const phone = document.getElementById('leadPhone').value;
+      const email = document.getElementById('leadEmail').value;
+      const category = document.getElementById('leadCategory').value;
+      const qty = document.getElementById('leadQty').value;
+      const design = document.getElementById('leadDesign').value;
+      const date = document.getElementById('leadDate').value;
+      const desc = document.getElementById('leadDesc').value;
+
+      const message = `*NEW PRINT INQUIRY - AVIS PRINTERS WEBSITE*
+---------------------------------------
+👤 *Name & Company:* ${name}
+📞 *Phone No:* ${phone}
+✉️ *Email:* ${email}
+📦 *Product Category:* ${category}
+📊 *Quantity Needed:* ${qty}
+🎨 *Designing:* ${design}
+📅 *Required Date:* ${date}
+---------------------------------------
+📝 *Description:*
+${desc || 'Standard specifications requested.'}`;
+
+      const encoded = encodeURIComponent(message);
+      window.open(`https://wa.me/918285462728?text=${encoded}`, '_blank');
+    }
+
+    // Initial Render
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      renderProjects();
+    });
+  </script>
+
+</body>
+</html>

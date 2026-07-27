@@ -3,6 +3,7 @@
    ========================================================================== */
 
 const WHATSAPP_NUMBER = "919318361225";
+const OFFICIAL_EMAIL = "Avisprinters2016@gmail.com";
 
 // Real Master Project Dataset (Linux & Vercel Case-Sensitive Clean Paths)
 const projectsData = [
@@ -154,11 +155,16 @@ function renderProjects() {
           <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">${p.title}</h3>
           <p class="text-xs text-slate-300 mt-1 leading-relaxed">${p.desc}</p>
         </div>
-        <div class="pt-3 flex justify-between items-center text-xs font-semibold border-t border-slate-800/80">
+        <div class="pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-xs font-semibold border-t border-slate-800/80">
           <span class="text-cyan-400 font-bold">${p.specs[0]}</span>
-          <button onclick="orderSimilar('${p.title}')" class="text-purple-400 hover:text-purple-300 flex items-center gap-1 font-bold">
-            Order Similar <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 inline"></i>
-          </button>
+          <div class="flex items-center gap-2">
+            <button onclick="orderSimilar('${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order WhatsApp
+            </button>
+            <button onclick="orderSimilarEmail('${p.title}')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
+              <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -231,10 +237,17 @@ function openLightbox(id) {
         </ul>
       </div>
 
-      <button onclick="orderSimilar('${p.title}')" class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 shadow-lg flex items-center justify-center gap-2">
-        <i data-lucide="message-circle" class="w-5 h-5"></i>
-        <span>Order Similar Execution on WhatsApp</span>
-      </button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <button onclick="orderSimilar('${p.title}')" class="btn btn-emerald py-3 text-xs font-bold flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Order via WhatsApp</span>
+        </button>
+
+        <button onclick="orderSimilarEmail('${p.title}')" class="btn btn-email py-3 text-xs font-bold flex items-center justify-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Order via Direct Email</span>
+        </button>
+      </div>
     </div>
   `;
 
@@ -333,6 +346,7 @@ function toggleFaq(elem) {
   }
 }
 
+// Action Handlers: WhatsApp & Direct Email
 function triggerQuickWhatsApp() {
   const cat = document.getElementById('quickCat')?.value || 'General';
   const qty = document.getElementById('quickQty')?.value || '500';
@@ -340,14 +354,34 @@ function triggerQuickWhatsApp() {
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 }
 
+function triggerQuickEmail() {
+  const cat = document.getElementById('quickCat')?.value || 'General';
+  const qty = document.getElementById('quickQty')?.value || '500';
+  const subject = encodeURIComponent(`Inquiry for ${cat} - Avis Printers`);
+  const body = encodeURIComponent(`Hello Avis Printers,\n\nI am requesting a price estimate for ${qty} units of ${cat}.\n\nPlease share details and turnaround time.\n\nThank you!`);
+  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+}
+
 function inquireCategory(catName) {
   const text = encodeURIComponent(`Hello Avis Printers! I am interested in ordering from your "${catName}" category. Please share pricing.`);
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 }
 
+function inquireCategoryEmail(catName) {
+  const subject = encodeURIComponent(`Category Inquiry: ${catName} - Avis Printers`);
+  const body = encodeURIComponent(`Hello Avis Printers,\n\nI would like to inquire about your "${catName}" services.\n\nPlease share your catalog, pricing, and turnaround time.\n\nThank you!`);
+  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+}
+
 function orderSimilar(projectTitle) {
   const text = encodeURIComponent(`Hi Avis Printers! I saw your past project "${projectTitle}" on your website. I want to order a similar execution.`);
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+}
+
+function orderSimilarEmail(projectTitle) {
+  const subject = encodeURIComponent(`Project Inquiry: ${projectTitle}`);
+  const body = encodeURIComponent(`Hi Avis Printers,\n\nI saw your past project execution "${projectTitle}" on your website.\n\nI would like to order a similar print execution. Please contact me with pricing.\n\nThank you!`);
+  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
 }
 
 function handleLeadSubmit(e) {
@@ -376,6 +410,34 @@ ${desc || 'Standard specifications requested.'}`;
 
   const encoded = encodeURIComponent(message);
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, '_blank');
+}
+
+function handleEmailLeadSubmit(e) {
+  if (e) e.preventDefault();
+  const name = document.getElementById('leadName')?.value || 'Client';
+  const phone = document.getElementById('leadPhone')?.value || '';
+  const email = document.getElementById('leadEmail')?.value || '';
+  const category = document.getElementById('leadCategory')?.value || 'General';
+  const qty = document.getElementById('leadQty')?.value || '500';
+  const design = document.getElementById('leadDesign')?.value || 'Standard';
+  const date = document.getElementById('leadDate')?.value || 'ASAP';
+  const desc = document.getElementById('leadDesc')?.value || '';
+
+  const subject = encodeURIComponent(`Official Quote Request: ${category} - ${name}`);
+  const body = encodeURIComponent(`OFFICIAL INQUIRY - AVIS PRINTERS
+---------------------------------------
+Name & Company: ${name}
+Phone No: ${phone}
+Email: ${email}
+Product Category: ${category}
+Quantity Needed: ${qty}
+Designing / Copywriting: ${design}
+Required Date: ${date}
+---------------------------------------
+Description:
+${desc || 'Standard specifications requested.'}`);
+
+  window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
 }
 
 // Initial Setup

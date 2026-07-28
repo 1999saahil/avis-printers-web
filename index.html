@@ -324,10 +324,10 @@ h1, h2, h3, h4, .font-heading {
           <i data-lucide="mail" class="w-3.5 h-3.5 inline"></i> <span class="hidden xs:inline">Avisprinters2016@gmail.com</span><span class="xs:hidden">Email</span>
         </button>
         <button onclick="triggerWhatsAppAction('national')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
-          <span>🇮🇳 National WhatsApp (Indian)</span>
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 inline text-emerald-400"></i> <span>National IN</span>
         </button>
         <button onclick="triggerWhatsAppAction('intl')" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">
-          <span>🌐 International WhatsApp</span>
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 inline text-cyan-400"></i> <span>International</span>
         </button>
       </div>
     </div>
@@ -370,17 +370,19 @@ h1, h2, h3, h4, .font-heading {
           <a href="#about" class="hover:text-purple-400 transition-colors">About Us</a>
         </nav>
 
-        <!-- Navbar Action Buttons (Masked Dual WhatsApp + Email CTAs) -->
+        <!-- Navbar Action Buttons (WhatsApp Symbol + National IN & International) -->
         <div class="flex items-center gap-1.5 sm:gap-2">
           <button onclick="triggerEmailAction('Header Inquiry', 'Hello Avis Printers team!')" class="btn btn-email py-2 px-3 sm:px-3.5 text-xs">
             <i data-lucide="mail" class="w-3.5 h-3.5"></i>
             <span class="hidden sm:inline">Email Us</span>
           </button>
           <button onclick="triggerWhatsAppAction('national')" class="btn btn-emerald py-2 px-2.5 sm:px-3 text-xs">
-            <span>🇮🇳 National WhatsApp (Indian)</span>
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>National IN</span>
           </button>
           <button onclick="triggerWhatsAppAction('intl')" class="btn btn-cyan py-2 px-2.5 sm:px-3 text-xs">
-            <span>🌐 International WhatsApp</span>
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>International</span>
           </button>
         </div>
 
@@ -424,14 +426,16 @@ h1, h2, h3, h4, .font-heading {
             </div>
           </div>
 
-          <!-- Hero Action CTAs (Masked Dual WhatsApp + Email Direct) -->
+          <!-- Hero Action CTAs (WhatsApp Symbol + National IN & International) -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 pt-4">
             <button onclick="triggerWhatsAppAction('national')" class="btn btn-emerald w-full sm:w-auto py-3.5 px-5">
-              <span>🇮🇳 National WhatsApp (Indian)</span>
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>National IN</span>
             </button>
 
             <button onclick="triggerWhatsAppAction('intl')" class="btn btn-cyan w-full sm:w-auto py-3.5 px-5">
-              <span>🌐 International WhatsApp</span>
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>International</span>
             </button>
 
             <button onclick="triggerEmailAction('Direct Hero Inquiry', 'Hi Avis Printers team, I would like a quote.')" class="btn btn-email w-full sm:w-auto py-3.5 px-5">
@@ -509,13 +513,16 @@ h1, h2, h3, h4, .font-heading {
 
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Spec Inquiry for ' + document.getElementById('quickQty').value + ' units of ' + document.getElementById('quickCat').value)" class="btn btn-emerald py-3 text-[11px] font-bold">
-                  <span>🇮🇳 National</span>
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>National IN</span>
                 </button>
                 <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International Spec Inquiry for ' + document.getElementById('quickQty').value + ' units of ' + document.getElementById('quickCat').value)" class="btn btn-cyan py-3 text-[11px] font-bold">
-                  <span>🌐 International</span>
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>International</span>
                 </button>
                 <button onclick="triggerEmailAction('Spec Inquiry', 'Hello Avis Printers,\n\nI need an estimate for ' + document.getElementById('quickQty').value + ' units of ' + document.getElementById('quickCat').value + '.')" class="btn btn-email py-3 text-[11px] font-bold">
-                  <span>✉️ Email</span>
+                  <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                  <span>Email</span>
                 </button>
               </div>
             </div>
@@ -577,7 +584,7 @@ h1, h2, h3, h4, .font-heading {
     </div>
   </section>
 
-  <!-- PRODUCT & SERVICE CATALOG (8 READABLE & MOBILE RESPONSIVE CATEGORIES) -->
+  <!-- PRODUCT & SERVICE CATALOG (8 READABLE CATEGORY CARDS WITH WHATSAPP SYMBOLS) -->
   <section id="catalog" class="py-14 sm:py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -593,7 +600,7 @@ h1, h2, h3, h4, .font-heading {
         </p>
       </div>
 
-      <!-- Categories Grid (8 Cards with Masked Dual Regional WhatsApp + Email) -->
+      <!-- Categories Grid (8 Cards with WhatsApp Symbol + National IN & International) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         
         <!-- Cat 1 -->
@@ -614,13 +621,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Business Stationery')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Business Stationery')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Business Stationery', 'Hello Avis Printers,\n\nI want to inquire about Business Stationery.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -643,13 +650,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Marketing Print')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Marketing Print')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Marketing Print', 'Hello Avis Printers,\n\nI want to inquire about Marketing Print.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -672,13 +679,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Signage')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Signage')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Signage', 'Hello Avis Printers,\n\nI want to inquire about Signage.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -701,13 +708,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Packaging')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Packaging')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Packaging', 'Hello Avis Printers,\n\nI want to inquire about Packaging.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -730,13 +737,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Apparel & Merch')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Apparel & Merch')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Apparel & Merch', 'Hello Avis Printers,\n\nI want to inquire about Apparel & Merch.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -759,13 +766,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Books & Publishing')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Books & Publishing')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Books & Publishing', 'Hello Avis Printers,\n\nI want to inquire about Books & Publishing.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -788,13 +795,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Trading Inventory')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Trading Inventory')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Trading Inventory', 'Hello Avis Printers,\n\nI want to inquire about Trading Inventory.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -817,13 +824,13 @@ h1, h2, h3, h4, .font-heading {
           </div>
           <div class="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-800 text-[10px]">
             <button onclick="triggerWhatsAppAction('national', 'Inquiry for Content Package')" class="btn btn-emerald py-2 text-[10px] font-bold">
-              <span>🇮🇳 National</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'International Inquiry for Content Package')" class="btn btn-cyan py-2 text-[10px] font-bold">
-              <span>🌐 Intl</span>
+              <i data-lucide="message-circle" class="w-3 h-3"></i> International
             </button>
             <button onclick="triggerEmailAction('Category Inquiry: Content Writing Package', 'Hello Avis Printers,\n\nI want to inquire about Content Package.')" class="btn btn-email py-2 text-[10px] font-bold">
-              <span>✉️ Email</span>
+              <i data-lucide="mail" class="w-3 h-3"></i> Email
             </button>
           </div>
         </div>
@@ -1146,7 +1153,7 @@ h1, h2, h3, h4, .font-heading {
     </div>
   </section>
 
-  <!-- LEAD GENERATION FORM (DUAL WHATSAPP + DIRECT EMAIL SUBMIT) -->
+  <!-- LEAD GENERATION FORM (TRIPLE WHATSAPP + DIRECT EMAIL SUBMIT) -->
   <section id="quote" class="py-14 sm:py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -1226,14 +1233,16 @@ h1, h2, h3, h4, .font-heading {
             <textarea id="leadDesc" rows="3" placeholder="Dimensions, paper finish, topic topics, target audience..." class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3.5 text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500"></textarea>
           </div>
 
-          <!-- Triple Form Submit Buttons: National WhatsApp, Intl WhatsApp, Direct Email -->
+          <!-- Triple Form Submit Buttons: National IN, International, Direct Email -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
             <button type="button" onclick="handleLeadSubmit(event, 'national')" class="btn btn-emerald w-full py-3.5 text-xs font-bold flex items-center justify-center gap-1.5">
-              <span>🇮🇳 National WhatsApp (Indian)</span>
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>National IN</span>
             </button>
 
             <button type="button" onclick="handleLeadSubmit(event, 'intl')" class="btn btn-cyan w-full py-3.5 text-xs font-bold flex items-center justify-center gap-1.5">
-              <span>🌐 International WhatsApp</span>
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>International</span>
             </button>
 
             <button type="button" onclick="handleLeadSubmit(event, 'email')" class="btn btn-email w-full py-3.5 text-xs font-bold flex items-center justify-center gap-1.5">
@@ -1299,12 +1308,12 @@ h1, h2, h3, h4, .font-heading {
                 <button onclick="triggerEmailAction('About Section Inquiry', 'Hello Avis Printers')" class="text-purple-300 font-bold hover:underline">Avisprinters2016@gmail.com</button>
               </div>
               <div class="flex justify-between py-2 border-b border-slate-800">
-                <span>🇮🇳 National Support:</span>
-                <button onclick="triggerWhatsAppAction('national')" class="text-emerald-400 font-bold hover:underline">National WhatsApp (Indian)</button>
+                <span>National Support:</span>
+                <button onclick="triggerWhatsAppAction('national')" class="text-emerald-400 font-bold hover:underline flex items-center gap-1"><i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> National IN</button>
               </div>
               <div class="flex justify-between py-2">
-                <span>🌐 International Support:</span>
-                <button onclick="triggerWhatsAppAction('intl')" class="text-cyan-400 font-bold hover:underline">International WhatsApp</button>
+                <span>International Support:</span>
+                <button onclick="triggerWhatsAppAction('intl')" class="text-cyan-400 font-bold hover:underline flex items-center gap-1"><i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> International</button>
               </div>
             </div>
           </div>
@@ -1326,10 +1335,10 @@ h1, h2, h3, h4, .font-heading {
           <i data-lucide="mail" class="w-4 h-4"></i> Avisprinters2016@gmail.com
         </button>
         <button onclick="triggerWhatsAppAction('national')" class="text-emerald-400 hover:underline flex items-center gap-1">
-          <span>🇮🇳 National WhatsApp (Indian)</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i> National IN
         </button>
         <button onclick="triggerWhatsAppAction('intl')" class="text-cyan-400 hover:underline flex items-center gap-1">
-          <span>🌐 International WhatsApp</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i> International
         </button>
       </div>
     </div>
@@ -1342,10 +1351,12 @@ h1, h2, h3, h4, .font-heading {
         Select Your Region:
       </div>
       <button onclick="triggerWhatsAppAction('national'); toggleFloatingWhatsAppMenu();" class="w-full btn btn-emerald py-2.5 text-xs font-bold flex items-center justify-start gap-2">
-        <span>🇮🇳 National WhatsApp (Indian)</span>
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>National IN</span>
       </button>
       <button onclick="triggerWhatsAppAction('intl'); toggleFloatingWhatsAppMenu();" class="w-full btn btn-cyan py-2.5 text-xs font-bold flex items-center justify-start gap-2">
-        <span>🌐 International WhatsApp</span>
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>International</span>
       </button>
     </div>
 
@@ -1699,13 +1710,13 @@ function renderProjects() {
           <span class="text-cyan-400 font-bold">${p.specs[0]}</span>
           <div class="flex items-center gap-2 w-full sm:w-auto">
             <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Inquiry for: ${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-              🇮🇳 National
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International inquiry for: ${p.title}')" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-bold">
-              🌐 Intl
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> International
             </button>
             <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project: ${p.title}.\n\nPlease send details.')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-              ✉️ Email
+              <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
             </button>
           </div>
         </div>
@@ -1778,15 +1789,18 @@ function openLightbox(id) {
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
         <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Inquiry for project: ${p.title}')" class="btn btn-emerald py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>🇮🇳 National WhatsApp (Indian)</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>National IN</span>
         </button>
 
         <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International Inquiry for project: ${p.title}')" class="btn btn-cyan py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>🌐 International WhatsApp</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>International</span>
         </button>
 
         <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project: ${p.title}.\n\nPlease reply with pricing.')" class="btn btn-email py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>✉️ Email Us</span>
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Email Us</span>
         </button>
       </div>
     </div>
@@ -1800,7 +1814,7 @@ function closeLightbox() {
   document.getElementById('lightboxModal')?.classList.add('hidden');
 }
 
-// Sliding Testimonial Carousel Logic (Renders All 26 Reviews!)
+// Sliding Testimonial Carousel Logic
 function renderTestimonials() {
   const container = document.getElementById('testimonialSlide');
   const dotsContainer = document.getElementById('testimonialDots');

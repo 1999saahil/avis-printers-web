@@ -325,13 +325,13 @@ function renderProjects() {
           <span class="text-cyan-400 font-bold">${p.specs[0]}</span>
           <div class="flex items-center gap-2 w-full sm:w-auto">
             <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Inquiry for: ${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-              🇮🇳 National
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> National IN
             </button>
             <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International inquiry for: ${p.title}')" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-bold">
-              🌐 Intl
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> International
             </button>
             <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project: ${p.title}.\n\nPlease send details.')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-              ✉️ Email
+              <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
             </button>
           </div>
         </div>
@@ -404,15 +404,18 @@ function openLightbox(id) {
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
         <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Inquiry for project: ${p.title}')" class="btn btn-emerald py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>🇮🇳 National WhatsApp (Indian)</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>National IN</span>
         </button>
 
         <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International Inquiry for project: ${p.title}')" class="btn btn-cyan py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>🌐 International WhatsApp</span>
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>International</span>
         </button>
 
         <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project: ${p.title}.\n\nPlease reply with pricing.')" class="btn btn-email py-3 text-xs font-bold flex items-center justify-center gap-1.5">
-          <span>✉️ Email Us</span>
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Email Us</span>
         </button>
       </div>
     </div>
@@ -426,7 +429,7 @@ function closeLightbox() {
   document.getElementById('lightboxModal')?.classList.add('hidden');
 }
 
-// Sliding Testimonial Carousel Logic (Renders All 26 Reviews!)
+// Sliding Testimonial Carousel Logic
 function renderTestimonials() {
   const container = document.getElementById('testimonialSlide');
   const dotsContainer = document.getElementById('testimonialDots');

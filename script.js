@@ -1,11 +1,51 @@
 /* ==========================================================================
-   AVIS PRINTERS - HIGH-CONVERTING LANDING PAGE JAVASCRIPT
+   AVIS PRINTERS - MASTER JAVASCRIPT SYSTEM
    ========================================================================== */
 
-const WHATSAPP_NUMBER = "919318361225";
+const WHATSAPP_NATIONAL = "919318361225";
+const WHATSAPP_INTL = "14376042318";
 const OFFICIAL_EMAIL = "Avisprinters2016@gmail.com";
 
-// Real Master Project Dataset (Linux & Vercel Case-Sensitive Clean Paths)
+// Mobile Detection Helper
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+}
+
+// Master Universal Email Trigger (Mobile Native Mail App / Desktop Gmail Web)
+function triggerEmailAction(subjectText, bodyText) {
+  const subject = encodeURIComponent(subjectText || "Inquiry for Avis Printers");
+  const body = encodeURIComponent(bodyText || "Hello Avis Printers team,\n\nI would like to request details and pricing for my project.\n\nThank you!");
+  
+  if (isMobileDevice()) {
+    // Native mail app launch on Mobile devices
+    window.location.href = `mailto:${OFFICIAL_EMAIL}?subject=${subject}&body=${body}`;
+  } else {
+    // Gmail Web compose tab launch on Desktop devices (100% reliable)
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(OFFICIAL_EMAIL)}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
+  }
+}
+
+// WhatsApp Trigger Helper
+function triggerWhatsAppAction(type, customText) {
+  const number = type === 'intl' ? WHATSAPP_INTL : WHATSAPP_NATIONAL;
+  const defaultMsg = type === 'intl' 
+    ? "Hello Avis Printers! I am an International client inquiring about printing & content packages." 
+    : "Hello Avis Printers! I am inquiring about printing & content packages.";
+  
+  const text = encodeURIComponent(customText || defaultMsg);
+  window.open(`https://wa.me/${number}?text=${text}`, '_blank');
+}
+
+// Floating WhatsApp Menu Toggle
+function toggleFloatingWhatsAppMenu() {
+  const menu = document.getElementById('floatingWhatsAppMenu');
+  if (menu) {
+    menu.classList.toggle('hidden');
+  }
+}
+
+// Real Master Project Dataset
 const projectsData = [
   { id: 1, cat: 'stationery', title: 'Sandhya - Creative Designer Branding', tag: 'Vector & Brand Suite', img: './assets/projects/sandhya_logo.png', bgWhite: true, desc: 'Custom vector butterfly gradient logo design, metallic foil business cards, and complete brand identity suite.', specs: ['Vector Logo Design', 'Metallic Gradient Foil', 'Soft-Touch Matte Finish'] },
   { id: 2, cat: 'govt', title: 'Official Inscription & Inauguration Plate', tag: 'Government & Corporate', img: './assets/projects/inauguration_plate_july_2026.jpg', desc: 'Acid-etched brass & stainless steel inauguration plate for official foundation stone ceremonies.', specs: ['Acid-Etched Deep Lettering', 'Brass / Stainless Steel', 'GeM Portal Execution'] },
@@ -117,13 +157,11 @@ let currentFilter = 'all';
 let visibleCount = 6;
 let currentTestimonialIndex = 0;
 let testimonialTimer = null;
-let currentEmailSubject = "";
-let currentEmailBody = "";
 
 // Render Gallery Cards
 function renderProjects() {
   const grid = document.getElementById('projectsGrid');
-  if (!grid) return;
+  if (!grid) return;  
   
   const searchVal = (document.getElementById('projectSearch')?.value || '').toLowerCase();
 
@@ -160,11 +198,14 @@ function renderProjects() {
         <div class="pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-xs font-semibold border-t border-slate-800/80">
           <span class="text-cyan-400 font-bold">${p.specs[0]}</span>
           <div class="flex items-center gap-2 w-full sm:w-auto">
-            <button onclick="orderSimilar('${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
-              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+            <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! I want to order project execution similar to: ${p.title}')" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-bold">
+              🇮🇳 WhatsApp
             </button>
-            <button onclick="orderSimilarEmail('${p.title}')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
-              <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+            <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International inquiry for project execution similar to: ${p.title}')" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-bold">
+              🌐 Intl
+            </button>
+            <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project execution similar to: ${p.title}.\n\nPlease send details.')" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-bold">
+              ✉️ Email
             </button>
           </div>
         </div>
@@ -235,15 +276,17 @@ function openLightbox(id) {
         </ul>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-        <button onclick="orderSimilar('${p.title}')" class="btn btn-emerald py-3 text-xs font-bold flex items-center justify-center gap-2">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Order via WhatsApp</span>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
+        <button onclick="triggerWhatsAppAction('national', 'Hi Avis Printers! Inquiry for project: ${p.title}')" class="btn btn-emerald py-3 text-xs font-bold flex items-center justify-center gap-1.5">
+          <span>🇮🇳 National WhatsApp</span>
         </button>
 
-        <button onclick="orderSimilarEmail('${p.title}')" class="btn btn-email py-3 text-xs font-bold flex items-center justify-center gap-2">
-          <i data-lucide="mail" class="w-4 h-4"></i>
-          <span>Order via Direct Email</span>
+        <button onclick="triggerWhatsAppAction('intl', 'Hi Avis Printers! International Inquiry for project: ${p.title}')" class="btn btn-cyan py-3 text-xs font-bold flex items-center justify-center gap-1.5">
+          <span>🌐 Intl WhatsApp</span>
+        </button>
+
+        <button onclick="triggerEmailAction('Project Inquiry: ${p.title}', 'Hi Avis Printers,\n\nI want to order project: ${p.title}.\n\nPlease reply with pricing.')" class="btn btn-email py-3 text-xs font-bold flex items-center justify-center gap-1.5">
+          <span>✉️ Email Us</span>
         </button>
       </div>
     </div>
@@ -344,120 +387,8 @@ function toggleFaq(elem) {
   }
 }
 
-// EMAIL POPUP MODAL & HANDLERS (Desktop Fail-Safe!)
-function openEmailModal(subject, body) {
-  currentEmailSubject = subject || "Inquiry for Avis Printers";
-  currentEmailBody = body || "Hello Avis Printers,\n\nI would like to request details and pricing for my project.\n\nThank you!";
-
-  const modal = document.getElementById('emailModal');
-  if (!modal) return;
-
-  const targetEmailSpan = document.getElementById('targetEmailText');
-  if (targetEmailSpan) targetEmailSpan.innerText = OFFICIAL_EMAIL;
-
-  modal.classList.remove('hidden');
-  if (window.lucide) lucide.createIcons();
-}
-
-function closeEmailModal() {
-  document.getElementById('emailModal')?.classList.add('hidden');
-}
-
-function launchGmailWeb() {
-  const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(OFFICIAL_EMAIL)}&su=${encodeURIComponent(currentEmailSubject)}&body=${encodeURIComponent(currentEmailBody)}`;
-  window.open(url, '_blank');
-  closeEmailModal();
-}
-
-function launchDefaultMailClient() {
-  const url = `mailto:${OFFICIAL_EMAIL}?subject=${encodeURIComponent(currentEmailSubject)}&body=${encodeURIComponent(currentEmailBody)}`;
-  window.location.href = url;
-  closeEmailModal();
-}
-
-function copyEmailAddress() {
-  navigator.clipboard.writeText(OFFICIAL_EMAIL).then(() => {
-    const btn = document.getElementById('copyEmailBtn');
-    if (btn) {
-      btn.innerHTML = `<i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span class="text-emerald-400">Email Address Copied!</span>`;
-      if (window.lucide) lucide.createIcons();
-      setTimeout(() => {
-        btn.innerHTML = `<i data-lucide="copy" class="w-4 h-4"></i> <span>Copy Email Address</span>`;
-        if (window.lucide) lucide.createIcons();
-      }, 2500);
-    }
-  }).catch(() => {
-    alert(`Avis Printers Official Email: ${OFFICIAL_EMAIL}`);
-  });
-}
-
-// Quick Actions
-function triggerQuickWhatsApp() {
-  const cat = document.getElementById('quickCat')?.value || 'General';
-  const qty = document.getElementById('quickQty')?.value || '500';
-  const text = encodeURIComponent(`Hi Avis Printers! I need a quick estimate for ${qty} units of ${cat}. Please guide me.`);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
-}
-
-function triggerQuickEmail() {
-  const cat = document.getElementById('quickCat')?.value || 'General';
-  const qty = document.getElementById('quickQty')?.value || '500';
-  const subject = `Inquiry for ${cat} - Avis Printers`;
-  const body = `Hello Avis Printers,\n\nI am requesting a price estimate for ${qty} units of ${cat}.\n\nPlease share details and turnaround time.\n\nThank you!`;
-  openEmailModal(subject, body);
-}
-
-function inquireCategory(catName) {
-  const text = encodeURIComponent(`Hello Avis Printers! I am interested in ordering from your "${catName}" category. Please share pricing.`);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
-}
-
-function inquireCategoryEmail(catName) {
-  const subject = `Category Inquiry: ${catName} - Avis Printers`;
-  const body = `Hello Avis Printers,\n\nI would like to inquire about your "${catName}" services.\n\nPlease share your catalog, pricing, and turnaround time.\n\nThank you!`;
-  openEmailModal(subject, body);
-}
-
-function orderSimilar(projectTitle) {
-  const text = encodeURIComponent(`Hi Avis Printers! I saw your past project "${projectTitle}" on your website. I want to order a similar execution.`);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
-}
-
-function orderSimilarEmail(projectTitle) {
-  const subject = `Project Inquiry: ${projectTitle}`;
-  const body = `Hi Avis Printers,\n\nI saw your past project execution "${projectTitle}" on your website.\n\nI would like to order a similar print execution. Please contact me with pricing.\n\nThank you!`;
-  openEmailModal(subject, body);
-}
-
-function handleLeadSubmit(e) {
-  e.preventDefault();
-  const name = document.getElementById('leadName')?.value || '';
-  const phone = document.getElementById('leadPhone')?.value || '';
-  const email = document.getElementById('leadEmail')?.value || '';
-  const category = document.getElementById('leadCategory')?.value || '';
-  const qty = document.getElementById('leadQty')?.value || '';
-  const design = document.getElementById('leadDesign')?.value || '';
-  const date = document.getElementById('leadDate')?.value || '';
-  const desc = document.getElementById('leadDesc')?.value || '';
-
-  const message = `*NEW PRINT & CONTENT INQUIRY - AVIS PRINTERS WEBSITE*
----------------------------------------
-👤 *Name & Company:* ${name}
-📞 *Phone No:* ${phone}
-✉️ *Email:* ${email}
-📦 *Product Category:* ${category}
-📊 *Quantity Needed:* ${qty}
-🎨 *Designing / Copywriting:* ${design}
-📅 *Required Date:* ${date}
----------------------------------------
-📝 *Description:*
-${desc || 'Standard specifications requested.'}`;
-
-  const encoded = encodeURIComponent(message);
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, '_blank');
-}
-
-function handleEmailLeadSubmit(e) {
+// Form Handlers
+function handleLeadSubmit(e, channel) {
   if (e) e.preventDefault();
   const name = document.getElementById('leadName')?.value || 'Client';
   const phone = document.getElementById('leadPhone')?.value || '';
@@ -468,21 +399,26 @@ function handleEmailLeadSubmit(e) {
   const date = document.getElementById('leadDate')?.value || 'ASAP';
   const desc = document.getElementById('leadDesc')?.value || '';
 
-  const subject = `Official Quote Request: ${category} - ${name}`;
-  const body = `OFFICIAL INQUIRY - AVIS PRINTERS
+  const formattedMsg = `NEW PRINT & CONTENT INQUIRY - AVIS PRINTERS
 ---------------------------------------
-Name & Company: ${name}
-Phone No: ${phone}
-Email: ${email}
-Product Category: ${category}
-Quantity Needed: ${qty}
-Designing / Copywriting: ${design}
-Required Date: ${date}
+👤 Name & Company: ${name}
+📞 Phone No: ${phone}
+✉️ Email: ${email}
+📦 Product Category: ${category}
+📊 Quantity Needed: ${qty}
+🎨 Designing / Copywriting: ${design}
+📅 Required Date: ${date}
 ---------------------------------------
-Description:
+📝 Description:
 ${desc || 'Standard specifications requested.'}`;
 
-  openEmailModal(subject, body);
+  if (channel === 'email') {
+    triggerEmailAction(`Official Inquiry: ${category} - ${name}`, formattedMsg);
+  } else if (channel === 'intl') {
+    triggerWhatsAppAction('intl', formattedMsg);
+  } else {
+    triggerWhatsAppAction('national', formattedMsg);
+  }
 }
 
 // Initial Setup
